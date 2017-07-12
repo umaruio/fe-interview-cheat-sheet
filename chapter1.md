@@ -53,7 +53,7 @@
 
 1. Vue 1 和 Vue 2 的区别
 
-	\* V-DOM
+   \* V-DOM
 
 2. Vue 的优点和缺点
 
@@ -69,7 +69,7 @@
 
 8. AMD CMD UMD CommonJS ES6 对比
 
-## Web 与 Bowser 篇
+## Web & Bowser 篇
 
 ## Node 篇
 
