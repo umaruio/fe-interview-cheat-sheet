@@ -225,5 +225,5 @@ html, body {
 
 BFC 是 Block Formatting Context 的缩写，中文名叫块级格式化上下文。它的 MDN 链接：[https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block\_formatting\_context](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
 
-这个概念落脚点在上下文，即一个包含环境。换言之就是我们创建了一个块级元素，而这个元素又属于 BFC 规定的那几种元素之一，那它就和它的子元素一起构成了一个块级上下文。要注意的是：一个块格式化上下文包括创建它的元素内部所有内容，**除了**被包含于创建新的块级格式化上下文的后代元素内的元素。
+这个概念落脚点在上下文，即一个包含环境。换言之就是我们创建了一个块级元素，而这个元素又属于 BFC 规定的那几种元素之一，那它就和它的子元素一起构成了一个块级格式化上下文。要注意的是：一个块格式化上下文包括创建它的元素内部所有内容，**除了**被包含于创建新的块级格式化上下文的后代元素内的元素。
 
