@@ -6,17 +6,44 @@
 
 这种布局源于一篇文章：[https://alistapart.com/article/holygrail。它利用](https://alistapart.com/article/holygrail。它利用) CSS 负边距（Negative Margin）强行将左右两边的盒子移动到中间盒子的左右两边。
 
-```
-<div class="container">
-    <div class="middle"></div>
-    <div class="left"></div>
-    <div class="right"></div>
-</div>
+```HTML
+<body>
+    <div class="container">
+        <div class="middle"></div>
+        <!-- 因为要先渲染 .middle，所以 .middle 一定要写在第一个 -->
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
 ```
 
-```
+```css
+.container {
+    /* 压缩左右内边距，留出 .left 和 .right 的距离 */
+    padding: 0 200px;
+}
+.container > div {
+    height: 200px;
+    float: left;
+}
+.middle {
+    width: 100%;
+    background: blue;
+}
 .left {
-    margin-left: -100%;
+    margin-left: -100%; /* 用 -100% 吃掉 .middle 的宽度 */
+    position: relative; /* 相对 .container -200px */
+    left: -200px;
+    width: 200px;
+    background: red;
+}
+.right {
+    margin-left: -200px; /* 用 -200px 吃掉 .right 自己的宽度 */
+    position: relative; /* 相对 .container -200px */
+    right: -200px;
+    width: 200px;
+    background: green;
+}
 ```
 
 * 双飞翼布局
