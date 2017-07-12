@@ -189,7 +189,23 @@ html, body {
 
 当然，CSS3 还提供了另一种垂直居中的方案：transform 。这个属性用来修改 CSS 视觉格式模型的坐标空间，说白了就是移动当前元素。代码如下：
 
-
+```css
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.vertical {
+    width: 300px;
+    height: 300px;
+    background: orange;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); /* 将元素沿 Y 轴方向移动自身的 50% */
+}
+```
 
 ##### CSS 的怪异盒模型
 
