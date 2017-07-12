@@ -2,9 +2,9 @@
 
 ##### CSS 三列布局的实现方案（左右两列宽度固定，中间自适应）：
 
-* 圣杯布局
+* 圣杯布局 Holy Grail Layout
 
-这种布局源于一篇文章：https://alistapart.com/article/holygrail。它利用 CSS 负边距（Negative Margin）强行将左右两边的盒子移动到中间盒子的左右两边。
+这种布局源于一篇文章：[https://alistapart.com/article/holygrail。它利用](https://alistapart.com/article/holygrail。它利用) CSS 负边距（Negative Margin）强行将左右两边的盒子移动到中间盒子的左右两边。
 
 ```
 <div class="container">
@@ -17,7 +17,6 @@
 ```
 .left {
     margin-left: -100%;
-    
 ```
 
 * 双飞翼布局
