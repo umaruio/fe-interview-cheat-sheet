@@ -236,7 +236,7 @@ BFC 是 Block Formatting Context 的缩写，中文名叫块级格式化上下�
 
 ##### CSS3 transition 属性的用法：
 
-这是 CSS3 新提供的一个用来制作元素过度动效的属性，通常定义在 CSS 伪类中。大致的用法如下：
+这是 CSS3 新提供的一个用来制作元素过度动效的属性，通常定义在 CSS 伪类中，也可以配合 `transform` 等动画属性一起使用。大致的用法如下：
 
 ```css
 a:hover {
@@ -244,9 +244,11 @@ a:hover {
 }
 ```
 
+transition 本身是一个比较复杂和强大的属性，所以关于它的详细用法，可以查看文档：
+
+[https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition)
+
 ##### rem 和 em 的区别
-
-
 
 
 

@@ -10,7 +10,7 @@
 * [x] 什么是 BFC
 * [ ] CSS 的盒子模型 （W3C 和 IE）
 * [ ] ~~CSS 的居中方案~~
-* [ ] transition 的属性值和应用
+* [x] transition 的属性值和应用
 * [ ] rem 和 em 的区别
 * [ ] CSS 中有哪些长度单位
 * [ ] 如何实现一个矩形的椭圆边角
@@ -112,6 +112,4 @@
 ## Node 篇
 
 * [ ] Node.js 的 Buffer 和 Stream 有什么区别
-
-
 
