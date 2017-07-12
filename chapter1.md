@@ -51,5 +51,27 @@
 
 ## 前端架构篇
 
+1. Vue 1 和 Vue 2 的区别
+
+	\* V-DOM
+
+2. Vue 的优点和缺点
+
+3. 前后端分离的优点和缺点
+
+4. 前端工程化的意义
+
+5. 什么是 MVC，什么是 MVP，什么是 MVVM
+
+6. Vuex 的工作原理
+
+7. 项目如何实现模块化
+
+8. AMD CMD UMD CommonJS ES6 对比
+
+## Web 与 Bowser 篇
+
+## Node 篇
+
 
 
