@@ -6,5 +6,5 @@
 
 同时，如果你是正在面试的同学，也欢迎你分享你的面试经验，我会将你提供的有价值的问题添加到这本书的问题列表里，并附上你的解答。或许你不知道答案，我也欢迎你向我提问，互相成长~
 
-有任何问题或相关的分享与补充，欢迎到本书的 Github Repo 上提交 Issue，谢谢。
+有任何问题或相关的分享与补充，欢迎到本书的 Github Repo 上提交 Issue，谢谢。Github Repo: https://github.com/lcx960324/fe-interview-cheat-sheet/issues
 
