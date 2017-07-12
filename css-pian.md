@@ -234,5 +234,19 @@ BFC 是 Block Formatting Context 的缩写，中文名叫块级格式化上下�
 * W3C 的 CSS 盒模型
 * IE 的 CSS 盒模型
 
+##### CSS3 transition 属性的用法：
+
+这是 CSS3 新提供的一个用来制作元素过度动效的属性，通常定义在 CSS 伪类中。大致的用法如下：
+
+```css
+a:hover {
+    transition: all 0.5s ease-out;
+}
+```
+
+##### rem 和 em 的区别
+
+
+
 
 
