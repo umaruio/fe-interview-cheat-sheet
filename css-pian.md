@@ -221,7 +221,7 @@ html, body {
 * calc 属性
 * transform 属性
 
-##### 什么是 BFC ？
+##### 什么是 BFC？
 
 
 
