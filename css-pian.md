@@ -46,7 +46,7 @@
 }
 ```
 
-* 双飞翼布局
+* 双飞翼布局 Double Wings Layout
 
 这种布局源于淘宝的 UED
 
