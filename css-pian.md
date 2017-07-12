@@ -90,6 +90,8 @@
 
 * Flex 布局
 
+Flex Layout 是 CSS3 提供的新的布局方式。
+
 ```
 
 ```
