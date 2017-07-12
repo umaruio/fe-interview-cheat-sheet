@@ -3,7 +3,7 @@
 * [简介](README.md)
 * [目录](chapter1.md)
 * [HTML & CSS 篇](css-pian.md)
-* JavaScript 篇
+* [JavaScript 篇](javascript-pian.md)
 * 前端架构篇
 * Web & Bowser 篇
 * 算法、数据结构与设计模式篇
