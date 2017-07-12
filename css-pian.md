@@ -269,6 +269,9 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
   * em
   * rem
   * points （默认 1 point = 1/72 in）
+  * pica （1 pc = 12 pt）
+  * ex 一个基于当前字体 x 的高度度量的属性
+  * ch 基于 0 的宽度
 
 
 
