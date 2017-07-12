@@ -187,7 +187,7 @@ html, body {
 }
 ```
 
-当然，CSS3 还提供了另一种垂直居中的方案：transform 。这个属性用来修改 CSS 视觉格式模型的坐标空间，说白了就是移动当前元素。代码如下：
+当然，CSS3 还提供了另一种垂直居中的方案：`transform` 。这个属性用来修改 CSS 视觉格式模型的坐标空间，说白了就是移动当前元素。代码如下：
 
 ```css
 html, body {
@@ -223,5 +223,5 @@ html, body {
 
 ##### 什么是 BFC？
 
-
+BFC 是 Block Formatting Context 的缩写，中文名叫块级格式化上下文。它的 MDN 链接：https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block\_formatting\_context
 
