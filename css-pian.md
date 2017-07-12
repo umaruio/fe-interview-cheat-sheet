@@ -262,7 +262,13 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 * 绝对长度单位
   * px 像素
-  * in 英寸
+  * in 英寸 （1 in = 96px）
+  * cm 厘米 （1 cm = 37.8px）
+  * mm 毫米
+* 相对字体长度
+  * em
+  * rem
+  * points （默认 1 point = 1/72 in）
 
 
 
