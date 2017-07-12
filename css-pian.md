@@ -120,7 +120,38 @@ Flex Layout 是 CSS3 提供的新的布局方式。
 这个问题要分成两部分：画出一个直径 100px 的圆 & 将某个 div 置于屏幕中间。
 
 * 画出一个直径 100px 的圆：使用 `border-radius` 就好。
-* 将一个 div 放置于屏幕中间：这个比较复杂。
+* 将一个 div 放置于屏幕中间：使用 CSS3 Flex 提供的两个新特性：`align-items` 和 `justify-content`
+* 完整代码如下：
+
+```
+<body>
+    <div class="circle"></div>
+</body>
+```
+
+```
+/* 以下 CSS 代码并没有考虑兼容性的问题 */
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    /* 使用 CSS3 flex layout 使元素垂直居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.circle {
+    /* 使用 border-radius 画出一个圆形 */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: red;
+}
+```
 
 ##### CSS 如何实现垂直居中？
 
