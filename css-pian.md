@@ -284,8 +284,9 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 ##### 一些冷门的  CSS Selector
 
-https://www.w3schools.com/cssref/css\_selectors.asp
+[https://www.w3schools.com/cssref/css\_selectors.asp](https://www.w3schools.com/cssref/css_selectors.asp)
 
-* 
+
+
 
 
