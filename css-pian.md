@@ -92,8 +92,27 @@
 
 Flex Layout 是 CSS3 提供的新的布局方式。
 
+```HTML
+<body>
+    <div class="container">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-3"></div>
+    </div>
+</body>
 ```
 
+```css
+.container {
+    display: flex;
+    width: 100%;
+}
+.container > div {
+    height: 100px;
+    border: 1px solid #000;
+    flex: 1;
+    position: relative;
+}
 ```
 
 ##### 如何用 Flex 画出一个直径 100px 的圆，并放在屏幕中间？
