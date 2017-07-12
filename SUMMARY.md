@@ -2,5 +2,5 @@
 
 * [简介](README.md)
 * [目录](chapter1.md)
-* [CSS 篇](css-pian.md)
+* [HTML & CSS 篇](css-pian.md)
 
