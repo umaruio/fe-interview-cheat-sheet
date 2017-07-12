@@ -50,8 +50,42 @@
 
 这种布局源于淘宝的 UED
 
+```HTML
+<body>
+    <div class="container">
+        <div class="middle">
+            <div class="middle-container"></div>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
 ```
 
+```css
+.container > div {
+    float: left;
+    height: 200px;
+}
+.middle {
+    width: 100%;
+    background: red;
+}
+.middle-container { /* 添加 .middle-container 包裹内容 */
+    height: 200px;
+    margin: 0 200px;
+    background: darkred;
+}
+.left {
+    width: 200px;
+    margin-left: -100%;
+    background: blue;
+}
+.right {
+    width: 200px;
+    margin-left: -200px;
+    background: green;
+}
 ```
 
 * Flex 布局
