@@ -123,13 +123,13 @@ Flex Layout 是 CSS3 提供的新的布局方式。
 * 将一个 div 放置于屏幕中间：使用 CSS3 Flex 提供的两个新特性：`align-items` 和 `justify-content`
 * 完整代码如下：
 
-```
+```HTML
 <body>
     <div class="circle"></div>
 </body>
 ```
 
-```
+```css
 /* 以下 CSS 代码并没有考虑兼容性的问题 */
 html {
     height: 100%;
@@ -152,6 +152,8 @@ body {
     background: red;
 }
 ```
+
+* 建议大家了解以下  CSS3 的 Flex Layout。如果有精力的话，可以再去看看 CSS3 的最新布局系统 Grid Layout 。
 
 ##### CSS 如何实现垂直居中？
 
