@@ -17,6 +17,7 @@
 * [ ] 如何实现两个 div 左右各 50% 的布局
 * [ ] 移动端布局方案
 * [ ] canvas 切图的原理
+* [ ] 一些冷门的 CSS Selector
 
 ## JavaScript 篇
 
