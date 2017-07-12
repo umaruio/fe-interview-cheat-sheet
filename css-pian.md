@@ -162,8 +162,29 @@ body {
 * 文本的垂直居中很简单，只需要在他的父标签上指定高度（`height`）与相同的行高（`line-height`）即可。
 * 标签元素的居中方式比较多，也比较复杂。首先，我们可以使用 CSS3 的 Flex Layout 实现（见上一题），但是这种方法明显存在兼容性问题。所以，我们绕个弯路，用传统的方法实现以下垂直居中：
 
+```HTML
+<body>
+    <div class="vertical"></div>
+</body>
 ```
 
+```css
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.vertical {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 0 auto; /* 最简单的水平居中方式 */
+    /* 以下是垂直居中的代码： */
+    position: relative;
+    top: 50%;
+    margin-top: -50px;
+}
 ```
 
 ##### CSS 的怪异盒模型
