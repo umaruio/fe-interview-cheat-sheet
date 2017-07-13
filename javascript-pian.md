@@ -226,7 +226,9 @@ function fibonacci (n) {
 
 至少要知道的两个方法和一个属性：`event.preventDefault()`，`event.stopPropagation()`，`event.target`
 
-至于其他的...：https://developer.mozilla.org/en-US/docs/Web/API/Event
+至于其他的...：[https://developer.mozilla.org/en-US/docs/Web/API/Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+##### 如何改变函数的 this 的指向？call, apply, bind 的区别？
 
 
 
