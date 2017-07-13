@@ -83,5 +83,24 @@ var Sub = function () {
 
 * 拷贝继承
 
+```js
+var Base = function () {
+    this.name = 'Base'
+    this.toString = function () {
+        return this.name
+    }
+}
+var Sub = function()  
+{  
+    var base = new Base()
+    for(var i in base) {
+        Sub.prototype[i] = base[i]
+    }
+    Sub.prototype['name'] = 'Sub'
+}
+```
+
+首先，只有可枚举的对象类型才能使用` foreach `的方式获取到，其次，这种写法真的快绝迹了。它的优点是可以实现多继承，缺点是写起来真的难受，而且效率很低。
+
 
 
