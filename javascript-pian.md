@@ -144,11 +144,13 @@ function init() {
 
 更多的内容，请参考：
 
-通过闭包实现一个throttle：http://www.alloyteam.com/2012/11/javascript-throttle/
+* 通过闭包实现一个throttle：[http://www.alloyteam.com/2012/11/javascript-throttle/](http://www.alloyteam.com/2012/11/javascript-throttle/)
 
-一道经典的闭包面试题：https://zhuanlan.zhihu.com/p/25855075
+* 一道经典的闭包面试题：[https://zhuanlan.zhihu.com/p/25855075](https://zhuanlan.zhihu.com/p/25855075)
 
-阮一峰的博客：http://www.ruanyifeng.com/blog/2009/08/learning\_javascript\_closures.html
+* 阮一峰的博客：[http://www.ruanyifeng.com/blog/2009/08/learning\_javascript\_closures.html](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
 
-闭包的真正意义：https://www.zhihu.com/question/34510484
+* 闭包的真正意义：[https://www.zhihu.com/question/34510484](https://www.zhihu.com/question/34510484)
+
+
 
