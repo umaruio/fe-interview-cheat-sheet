@@ -30,6 +30,20 @@
 因为 JavaScript 没有继承关键字，所以 JavaScript 实现继承的方法很特殊，大致有以下几种：
 
 * 原型链继承（最常见）
+
+```js
+// 原型链继承
+var Base = function () {
+    this.name = 'Base'
+    this.toString = function () {
+        return this.name
+    }
+}
+var Sub = function () {}
+Sub.prototype = new Base()
+Sub.name = 'Sub'
+```
+
 * 构造继承
 * 实例继承
 * 拷贝继承
