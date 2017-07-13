@@ -142,6 +142,31 @@ function init() {
 
 `displayName` 就是一个典型的闭包，它能够访问它之外的 `name` 变量，并保存这个变量在它创建时的状态。这个特性非常实用，因为 JavaScript 有很多奇怪的坑，比如 this context，比如作用域问题。举两个闭包的典型例子：
 
+```js
+function createFunctions() {
+	var result = new Array();
+	for( var i = 0; i < 10; i++) {
+		result[i] = function() {
+			return i;
+		};
+	}
+	return result;
+} // 这个函数返回的 i 全是 10 ，因为 i 是活动变量
+```
+
+```
+function createFunctions() {
+	var result = new Array();
+	for( var i = 0; i < 10; i++) {
+		result[i] = function(num) {
+			return function() {
+			return num;
+		}(i);
+	}
+	return result;
+} // 这样就好了
+```
+
 更多的内容，请参考：
 
 * 通过闭包实现一个throttle：[http://www.alloyteam.com/2012/11/javascript-throttle/](http://www.alloyteam.com/2012/11/javascript-throttle/)
