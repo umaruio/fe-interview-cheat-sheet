@@ -197,7 +197,7 @@ alert(object.getNameFunc()()); // "My Object"
 * 什么是事件冒泡？
   事件冒泡指的是在某一节点上触发事件后，事件会沿着节点的父链逐级向上传递，直到根节点。
 * 如何阻止事件冒泡？
-* `event.stopPropagation()`
+  `event.stopPropagation()`
 
 
 
