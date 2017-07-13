@@ -47,6 +47,20 @@ Sub.name = 'Sub'
 原型链继承是一种非常传统的继承方式。如果从`instanceof`关键字来看，实例既是父类的实例，也是子类的实例。但是这样的继承也有一个明显的问题：子类区别于父类的属性和方法需要在完成原型链继承之后再进行。同时，由于使用了 `prototype` ，无法实现多重继承。
 
 * 构造继承
+
+```js
+var Base = function () {
+    this.name = 'Base'
+    this.toString = function () {
+        return this.name
+    }
+}
+var Sub = function () {
+    Base.call(this)
+    this.name = 'Sub'
+}
+```
+
 * 实例继承
 * 拷贝继承
 
