@@ -153,27 +153,27 @@ function createFunctions() {
     return result;
 } // 这个函数返回的 i 全是 10 ，因为 i 是活动变量
 function createFunctions() {
-	var result = new Array();
-	for( var i = 0; i < 10; i++) {
-		result[i] = function(num) {
-			return function() {
-			return num;
-		}(i);
-	}
-	return result;
+    var result = new Array();
+    for( var i = 0; i < 10; i++) {
+        result[i] = function(num) {
+            return function() {
+            return num;
+        }(i);
+    }
+    return result;
 } // 这样就好了
 ```
 
 ```js
 var name = "The Window"
 var object = {
-	name: "My Object",
-	getNameFunc: function() {
-		var _this = this;
-		return function() {
-			return _this.name;
-		}
-	}
+    name: "My Object",
+    getNameFunc: function() {
+        var _this = this;
+        return function() {
+            return _this.name;
+        }
+    }
 };
 alert(object.getNameFunc()()); // "My Object"
 ```
@@ -187,6 +187,17 @@ alert(object.getNameFunc()()); // "My Object"
 * 阮一峰的博客：[http://www.ruanyifeng.com/blog/2009/08/learning\_javascript\_closures.html](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
 
 * 闭包的真正意义：[https://www.zhihu.com/question/34510484](https://www.zhihu.com/question/34510484)
+
+##### 函数 return 形式的闭包的 Promise 写法
+
+##### 如何禁止浏览器的默认事件？什么是事件冒泡？怎样防止事件冒泡？（CSS 也有一种方法）
+
+* 如何禁止浏览器的默认事件？
+  `event.preventDefault()`
+* 什么是事件冒泡？
+  事件冒泡指的是在某一节点上触发事件后，事件会沿着节点的父链逐级向上传递，直到根节点。
+* 如何阻止事件冒泡？
+* `event.stopPropagation()`
 
 
 
