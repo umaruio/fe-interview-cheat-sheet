@@ -44,6 +44,8 @@ Sub.prototype = new Base()
 Sub.name = 'Sub'
 ```
 
+原型链继承是一种非常传统的继承方式。
+
 * 构造继承
 * 实例继承
 * 拷贝继承
