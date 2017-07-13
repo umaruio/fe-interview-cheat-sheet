@@ -201,5 +201,9 @@ alert(object.getNameFunc()()); // "My Object"
 
 ##### readyState 的值分别代表什么状态。当 readyState === 3 的时候拔掉网线会怎么样
 
-readyState 来源于
+readyState 来源于 `XMLHttpRequest `，所以翻翻文档就好了：
+
+![](/assets/xhr.readyState.png)
+
+至于第二个问题，有点粗暴。有时间我试一下。也欢迎补充~
 
