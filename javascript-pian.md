@@ -123,3 +123,24 @@ var Sub = function()
 
 这道题问得很奇怪，我的理解是使用 JavaScript 封装原生 Ajax 并提供一些方便使用的接口。我们可以参考一下 jQuery 的 Ajax 实现，模仿其风格对 `XMLHttpRequest` 进行封装。
 
+##### 什么是闭包，什么时候（需要）构成闭包？
+
+闭包几乎是面试必考题了。闭包是指那些可以访问独立数据的函数，举个 MDN 的例子：
+
+```js
+function init() {
+  let name = "Mozilla"; 
+  // name 是一个被init创建的局部变量
+  function displayName() { 
+  // displayName() 是一个内部函数,
+      alert(name); 
+      //  一个闭包使用在父函数中声明的变量
+  } 
+  displayName();
+}
+```
+
+`displayName` 就是一个典型的闭包，它能够访问它之外的 `name` 变量，并保存这个变量在它创建时的状态。这个特性非常实用，因为 JavaScript 有很多奇怪的坑，比如 this context，比如作用域问题。
+
+
+
