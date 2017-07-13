@@ -61,7 +61,24 @@ var Sub = function () {
 }
 ```
 
+这种继承解决了原型链继承的问题，但它也有一些问题：使用 instanceof 运算符的时候会发现，它的实例并不是父类的实例（因为父类没有在它的原型链上）。
+
 * 实例继承
+
+```js
+var Base = function () {
+    this.name = 'Base'
+    this.toString = function () {
+        return this.name
+    }
+}
+var Sub = function () {  
+    var instance = new Base()
+    instance.name = "sub"
+    return instance
+}
+```
+
 * 拷贝继承
 
 
