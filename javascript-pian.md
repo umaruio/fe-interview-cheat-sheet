@@ -144,17 +144,14 @@ function init() {
 
 ```js
 function createFunctions() {
-	var result = new Array();
-	for( var i = 0; i < 10; i++) {
-		result[i] = function() {
-			return i;
-		};
-	}
-	return result;
+    var result = new Array();
+    for( var i = 0; i < 10; i++) {
+        result[i] = function() {
+            return i;
+        };
+    }
+    return result;
 } // 这个函数返回的 i 全是 10 ，因为 i 是活动变量
-```
-
-```
 function createFunctions() {
 	var result = new Array();
 	for( var i = 0; i < 10; i++) {
@@ -165,6 +162,20 @@ function createFunctions() {
 	}
 	return result;
 } // 这样就好了
+```
+
+```js
+var name = "The Window"
+var object = {
+	name: "My Object",
+	getNameFunc: function() {
+		var _this = this;
+		return function() {
+			return _this.name;
+		}
+	}
+};
+alert(object.getNameFunc()()); // "My Object"
 ```
 
 更多的内容，请参考：
