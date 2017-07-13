@@ -111,6 +111,14 @@ var Sub = function()
 
 ##### ES5 与 ES6 的继承有什么区别？
 
+先上一张图：
+
+![](/assets/es5-inherit.png)
+
+![](/assets/es6-inherit.png)
+
+区别显而易见：ES5 中子类继承的是父类的实例，ES6 中子类直接继承于父类。
+
 ##### 原生 Ajax 的实现步骤
 
 这道题问得很奇怪，我的理解是使用 JavaScript 封装原生 Ajax 并提供一些方便使用的接口。我们可以参考一下 jQuery 的 Ajax 实现，模仿其风格对 `XMLHttpRequest` 进行封装。
