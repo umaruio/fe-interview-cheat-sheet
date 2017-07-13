@@ -140,7 +140,15 @@ function init() {
 }
 ```
 
-`displayName` 就是一个典型的闭包，它能够访问它之外的 `name` 变量，并保存这个变量在它创建时的状态。这个特性非常实用，因为 JavaScript 有很多奇怪的坑，比如 this context，比如作用域问题。
+`displayName` 就是一个典型的闭包，它能够访问它之外的 `name` 变量，并保存这个变量在它创建时的状态。这个特性非常实用，因为 JavaScript 有很多奇怪的坑，比如 this context，比如作用域问题。举两个闭包的典型例子：
 
+更多的内容，请参考：
 
+通过闭包实现一个throttle：http://www.alloyteam.com/2012/11/javascript-throttle/
+
+一道经典的闭包面试题：https://zhuanlan.zhihu.com/p/25855075
+
+阮一峰的博客：http://www.ruanyifeng.com/blog/2009/08/learning\_javascript\_closures.html
+
+闭包的真正意义：https://www.zhihu.com/question/34510484
 
