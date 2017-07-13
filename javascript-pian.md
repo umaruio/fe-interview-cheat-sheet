@@ -209,5 +209,24 @@ readyState 来源于 `XMLHttpRequest`，所以翻翻文档就好了：
 
 ##### 闭包的缺陷
 
+##### 编写一个简单的递归函数
+
+送分题。最简单的：fibonacci 数列
+
+```js
+function fibonacci (n) {
+    if (n === 1 || n === 2) {
+        return 1
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+```
+
+##### 说出 Event 对象的 3 - 5 个属性或方法
+
+至少要知道的两个方法和一个属性：`event.preventDefault()`，`event.stopPropagation()`，`event.target`
+
+至于其他的...：https://developer.mozilla.org/en-US/docs/Web/API/Event
+
 
 
