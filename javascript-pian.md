@@ -262,5 +262,26 @@ arr.join(',')
 
 * Array.prototype.toString：用逗号分隔，效果和上边的一样。
 
+##### 如何将字符串转换为整数？
+
+首先，介绍一个把字符串转换为数字的快捷方式（使用了 JavaScript 的自动类型转换）：
+
+```js
+const str = '123.45' // string
+const num = +str // number
+```
+
+跑题了！题目要求把字符串转换为**整数**：
+
+```
+const str = '123.45'
+const num = parseInt(str)
+const numES6 = Number.parseInt(str)
+```
+
+ES6 将 parseInt 移植到了 Number 类上，当然，你一样可以在全局使用这个方法。
+
+##### parseInt 的第二个参数代表什么
+
 
 
