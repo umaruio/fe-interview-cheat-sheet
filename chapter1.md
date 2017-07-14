@@ -39,7 +39,7 @@
 * [ ] JS 如何实现数组的浅拷贝和深拷贝？
 * [x] 如何将数组转换为字符串？
 * [x] 如何将字符串转换为整数？
-* [ ] parseInt 的第二个参数代表什么
+* [x] parseInt 的第二个参数代表什么
 * [ ] 完整的 map, reduce, filter 都包含哪些参数？
 * [ ] 简述一下 prototype
 * [ ] 事件冒泡与 Ajax 的兼容性问题
@@ -112,4 +112,6 @@
 ## Node 篇
 
 * [ ] Node.js 的 Buffer 和 Stream 有什么区别
+
+
 

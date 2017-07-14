@@ -244,7 +244,7 @@ function fibonacci (n) {
 
 我能想到的办法：
 
-* Array.prototype.reduce
+* `Array.prototype.reduce`
 
 ```js
 const arr = []
@@ -253,14 +253,14 @@ arr.reduce((sum, val) => {
 })
 ```
 
-* Array.prototype.join
+* `Array.prototype.join`
 
 ```js
 const arr = []
 arr.join(',')
 ```
 
-* Array.prototype.toString：用逗号分隔，效果和上边的一样。
+* `Array.prototype.toString`：用逗号分隔，效果和上边的一样。
 
 ##### 如何将字符串转换为整数？
 
@@ -279,9 +279,15 @@ const num = parseInt(str)
 const numES6 = Number.parseInt(str)
 ```
 
-ES6 将 parseInt 移植到了 Number 类上，当然，你一样可以在全局使用这个方法。
+ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全局使用这个方法。
 
 ##### parseInt 的第二个参数代表什么？
 
-先看看文档怎么说：![](/assets/parseInt.png)是不是没看懂（或者懒得看...）！其实就是告诉 `parseInt `你传入的数字字符串的是几进制。
+先看看文档怎么说：![](/assets/parseInt.png)是不是没看懂（或者懒得看...）！其实就是告诉 `parseInt`你传入的数字字符串的是几进制。
+
+##### 完整的 map, reduce, filter 都包含哪些参数
+
+* map
+
+
 
