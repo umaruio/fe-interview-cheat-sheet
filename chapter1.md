@@ -40,7 +40,7 @@
 * [x] 如何将数组转换为字符串？
 * [x] 如何将字符串转换为整数？
 * [x] parseInt 的第二个参数代表什么
-* [ ] 完整的 map, reduce, filter 都包含哪些参数？
+* [x] 完整的 map, reduce, filter 都包含哪些参数？
 * [ ] 简述一下 prototype
 * [ ] 事件冒泡与 Ajax 的兼容性问题
 * [ ] 给定一个DOM元素，获取它相对于视图窗口的坐标
@@ -112,6 +112,4 @@
 ## Node 篇
 
 * [ ] Node.js 的 Buffer 和 Stream 有什么区别
-
-
 

@@ -238,7 +238,7 @@ function fibonacci (n) {
 
 这三个函数的具体用法，可以查一下文档，很简单~
 
-##### JS 如何实现数组的浅拷贝和深拷贝
+##### JS 如何实现数组的浅拷贝和深拷贝？
 
 ##### 如何将数组转换为字符串？
 
@@ -292,7 +292,7 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
     * `currentValue`：当前从数组取出的元素
     * `index`：该元素在数组中的位置
     * `array`：原始数组
-  * `thisArg`（可选）：执行 `callback `时的` this `上下文。
+  * `thisArg`（可选）：执行 `callback`时的`this`上下文。
 * `reduce` 接收两个参数：`reduce` 的回调函数，接收四个参数：
   * `callback`：
     * `accumulator`：上一个 reduce 函数的返回值（对于第一次执行，如果指定了 `initialValue`，会是 `initialValue` 的值，如果没有，默认使用原始数组的第一个元素值）
@@ -300,7 +300,9 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
     * `currentIndex`：该元素在数组中的位置
     * `array`：原始数组
   * `initialValue`（可选）：初始值。
-* `filter`：同` map`，不过 `callback `返回的是 `true` 或者 `false`。
+* `filter`：同`map`，不过 `callback`返回的是 `true` 或者 `false`。
 
+##### 简述一下 prototype
 
+prototype 是原型
 
