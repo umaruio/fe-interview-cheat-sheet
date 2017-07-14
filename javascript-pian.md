@@ -281,7 +281,7 @@ const numES6 = Number.parseInt(str)
 
 ES6 将 parseInt 移植到了 Number 类上，当然，你一样可以在全局使用这个方法。
 
-##### parseInt 的第二个参数代表什么
+##### parseInt 的第二个参数代表什么？
 
-
+先看看文档怎么说：![](/assets/parseInt.png)是不是没看懂（或者懒得看...）！其实就是告诉 `parseInt `你传入的数字字符串的是几进制。
 

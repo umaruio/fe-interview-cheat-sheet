@@ -38,7 +38,7 @@
 * [x] 如何改变函数的 this 的指向？call, apply, bind 的区别？
 * [ ] JS 如何实现数组的浅拷贝和深拷贝？
 * [x] 如何将数组转换为字符串？
-* [ ] 如何将字符串转换为整数？
+* [x] 如何将字符串转换为整数？
 * [ ] parseInt 的第二个参数代表什么
 * [ ] 完整的 map, reduce, filter 都包含哪些参数？
 * [ ] 简述一下 prototype
@@ -112,6 +112,4 @@
 ## Node 篇
 
 * [ ] Node.js 的 Buffer 和 Stream 有什么区别
-
-
 
