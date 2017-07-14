@@ -316,3 +316,4 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 
 这个问题我也不是很清楚，我唯一能想到的就是 `XMLHttpRequest` 和 `fetch` 的问题。`XHR1` 是从 IE7 开始提供支持的，IE10 开始基本完整的支持 `XHR`。 `fetch` 使用了 `Promise`，目前所有的 IE 版本都不支持这个函数。
 同时提一下，IE8 通过 `XDomainRequest` 支持了 CORS，IE10 开始完全支持了 CORS。（CORS：Cross-Origin Resource Sharing）
+以下是 `XHR` 兼容性的详细信息：
