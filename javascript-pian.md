@@ -230,5 +230,11 @@ function fibonacci (n) {
 
 ##### 如何改变函数的 this 的指向？call, apply, bind 的区别？
 
+使用 call apply bind 都可以改变函数的 this 指向。
 
+`bind` 返回一个新的函数。
+
+`call `和 `apply `都会直接执行函数，不同的是，`call` 直接接收函数参数，`apply` 需要把参数变成数组一并传入。
+
+这三个函数的具体用法，可以查一下文档，很简单~
 
