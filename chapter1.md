@@ -41,7 +41,7 @@
 * [x] 如何将字符串转换为整数？
 * [x] parseInt 的第二个参数代表什么
 * [x] 完整的 map, reduce, filter 都包含哪些参数？
-* [ ] 简述一下 prototype
+* [x] 简述一下 prototype
 * [ ] 事件冒泡与 Ajax 的兼容性问题
 * [ ] 给定一个DOM元素，获取它相对于视图窗口的坐标
 * [ ] offsetHeight， scrollHeight, clientHeight 分别代表什么
