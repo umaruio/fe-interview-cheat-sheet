@@ -242,5 +242,25 @@ function fibonacci (n) {
 
 ##### 如何将数组转换为字符串？
 
+我能想到的办法：
+
+* Array.prototype.reduce
+
+```js
+const arr = []
+arr.reduce((sum, val) => {
+    return sum + ',' + val
+})
+```
+
+* Array.prototype.join
+
+```js
+const arr = []
+arr.join(',')
+```
+
+* Array.prototype.toString：用逗号分隔，效果和上边的一样。
+
 
 
