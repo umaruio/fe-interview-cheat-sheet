@@ -300,6 +300,7 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
     * currentIndex：该元素在数组中的位置
     * array：原始数组
   * initialValue（可选）：初始值。
+* filter：同 map，不过 callback 返回的是 true 或者 false。
 
 
 
