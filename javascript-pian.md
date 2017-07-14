@@ -287,7 +287,13 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 
 ##### 完整的 map, reduce, filter 都包含哪些参数
 
-* map
+* map 接收两个参数：
+  * callback：map 的回调函数，接收三个参数：
+    * currentValue：当前从数组取出的元素
+    * index：该元素在数组中的位置
+    * array：原始数组
+  * thisArg：执行 callback 时的 this 上下文。
+* reduce 接收两个参数：
 
 
 
