@@ -47,7 +47,7 @@
 * [x] offsetHeight， scrollHeight, clientHeight 分别代表什么
 * [x] JavaScript 严格模式
 * [x] 如何实现图片滚动懒加载
-* [ ] resize 和 scroll 性能优化
+* [x] resize 和 scroll 性能优化
 * [ ] 闭包的继承问题
 
 ## 前端架构篇
@@ -85,7 +85,7 @@
 * [ ] CDN 的用法
 * [ ] 浏览器缓存问题（etag, last-modified\)
 * [ ] XSS 与 CSRF 的防范
-* [ ] 输入一个 URL 后发生了什么：[http://www.zyy1217.com/2017/03/01/从点击到呈现 — 详解一次HTTP请求/](http://www.zyy1217.com/2017/03/01/从点击到呈现 — 详解一次HTTP请求/)
+* [x] 输入一个 URL 后发生了什么：[http://www.zyy1217.com/2017/03/01/从点击到呈现 — 详解一次HTTP请求/](http://www.zyy1217.com/2017/03/01/从点击到呈现 — 详解一次HTTP请求/)
 * [ ] 如何实现 Web 缓存机制
 * [ ] 服务器端更新脚本，如何保证客户端不受缓存机制影响，实时更新脚本？
 * [ ] HTTP 有几种请求头，option 请求头的作用是什么？\( preflight \)
