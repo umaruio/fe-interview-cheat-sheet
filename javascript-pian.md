@@ -313,6 +313,8 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 说实话，事件冒泡我没想到什么兼容性问题。倒是事件有兼容性问题。事件的兼容性问题主要源自于 IE 与 Webkit 内核实现 Event Handler 的方式不同。红宝书的第 13 章提到了大量关于 IE 事件特殊性的地方。
 首先，我们习惯使用的 `addEventListener` 和 `removeEventListener` 在 IE 中被实现为 `attachEvent` 和 `detachEvent` 。IE9 开始支持标准的 `addEventListener` 和 `removeEventListener` ，IE11 开始正式废弃了 `attachEvent` 和 `detachEvent` 。
 同时 IE 实现阻止默认事件和阻止事件冒泡的方式也不一样。IE 的 event 对象有两个属性：`cancelBubble` 和 `returnValue` ，将这两个属性设置为 `false` 可分别组织事件冒泡和默认行为。
+还有就是 IE8 之前的 `Event` 对象并没有提供 `target` 属性。
+顺便提一下，不是所有的 DOM 事件都会冒泡，比如 `blur` 事件和 `focus` 事件就是默认不冒泡的。
 
 ###### Ajax 的兼容性问题
 
