@@ -329,8 +329,8 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 
 ##### 给定一个DOM元素，获取它相对于视图窗口的坐标
 
-没什么说的，直接上代码：
-
-```js
-
-```
+IE4 最先提供了获取视口坐标的函数：`Element.getBoundingClientRect()`，随后，Webkit 也提供了支持。这个函数返回一个 `DOMRect` 对象，该对象的 `x`，`y` 即是当前元素的左上角相对于视口左上角的坐标。
+需要注意的是，IE8 及之前版本的 `DOMRect` 没有 `height` 和 `width` 属性。
+详细信息可以参考文档：
+getBoundingClientRect：https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect
+DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMClientRect
