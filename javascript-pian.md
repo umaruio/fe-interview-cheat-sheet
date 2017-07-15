@@ -374,3 +374,8 @@ DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/
     * 新增了 ES6 保留字（已无意义）
     
 参考文档：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+
+##### 如何实现图片滚动懒加载
+
+实现滚动懒加载，要利用 `<img>` 的一个特性：如果 `<img>` 没有 `src` 属性或者 `src` 属性为空，浏览器是不会加载这个图片的。所以我们实现懒加载的方法也很简单：`<img>` 的默认 `src` 为空，将真正的 `src` 保存在图片的 `dataset` 或自定义属性上。当 `<img>` 元素进入视图之后，我们再将图片的 `src` 设置为真实的 `src` ，促使图片加载。判断图片位置的方式，可以使用上边题目提到的 `Element.getBoundingClientRect()` 。
+需要注意的是，出于性能考虑，当图片的加载被触发之后，应当移除图片的滚动事件监听器。
