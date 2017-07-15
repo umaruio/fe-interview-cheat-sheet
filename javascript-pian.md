@@ -334,3 +334,8 @@ IE4 最先提供了获取视口坐标的函数：`Element.getBoundingClientRect(
 详细信息可以参考文档：
 getBoundingClientRect：https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect
 DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMClientRect
+
+##### offsetHeight， scrollHeight, clientHeight 分别代表什么？
+* `offsetHeight`：元素在垂直方向上占用的空间大小，以像素计。（高度 + padding + 滚动条占用的高度 + 边框）
+* `scrollHeight`：在没有滚动条的情况下，元素内容的总高度。（完全展开的高度 + padding）
+* `clientHeight`：元素内容区高度加上上下内边距高度。（高度 + padding）
