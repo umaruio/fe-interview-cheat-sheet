@@ -46,7 +46,7 @@
 * [x] 给定一个DOM元素，获取它相对于视图窗口的坐标
 * [x] offsetHeight， scrollHeight, clientHeight 分别代表什么
 * [x] JavaScript 严格模式
-* [ ] 如何实现图片滚动懒加载
+* [x] 如何实现图片滚动懒加载
 * [ ] resize 和 scroll 性能优化
 * [ ] 闭包的继承问题
 
