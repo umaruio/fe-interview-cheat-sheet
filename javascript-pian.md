@@ -336,6 +336,40 @@ getBoundingClientRect：https://developer.mozilla.org/zh-CN/docs/Web/API/Element
 DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMClientRect
 
 ##### offsetHeight， scrollHeight, clientHeight 分别代表什么？
+
 * `offsetHeight`：元素在垂直方向上占用的空间大小，以像素计。（高度 + padding + 滚动条占用的高度 + 边框）
 * `scrollHeight`：在没有滚动条的情况下，元素内容的总高度。（完全展开的高度 + padding）
 * `clientHeight`：元素内容区高度加上上下内边距高度。（高度 + padding）
+
+##### JavaScript 严格模式
+
+阮一峰老师的博客对严格模式给出了非常好的解读：http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html
+我总结为以下几点：
+* 全局变量要显式声明
+* 不允许使用 `with`
+* 为 `eval` 添加了独立的作用域
+* `this === undefined` 时不会默认指向全局对象
+* 禁止在函数内部遍历调用栈（`caller` 和 `arguments`）
+* 无法删除变量（不能使用类似 `delete x` 这样的语法）
+* 只有 `configurable` 设置为 `true` 的对象的属性，才能够被删除。
+* 正常模式下不会报错的失败操作，在严格模式下会报错，比如对 `getter` 赋值，修改只读属性等。
+* 对象不允许出现重名属性
+* 函数不能出现重名参数
+* 禁止八进制表示法
+* 对 `arguments` 的限制：
+    * 不允许对 `arguments` 赋值
+    * `arguments` 不再追踪参数变化，即在函数内修改参数值不会影响到 `arguments` 。
+    
+    ```js
+    function f (a) {
+        'use strict'
+        a = 2
+        return [a, arguments[0]]
+    }
+    f(1) // [2, 1]
+    ```
+
+    * 禁止使用 `arguments.callee` 
+    * 函数声明必须在顶层
+    * 新增了 ES6 保留字（已无意义）
+参考文档：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
