@@ -372,4 +372,5 @@ DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/
     * 禁止使用 `arguments.callee` 
     * 函数声明必须在顶层
     * 新增了 ES6 保留字（已无意义）
+    
 参考文档：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
