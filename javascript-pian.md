@@ -310,7 +310,8 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 
 ###### 事件冒泡的兼容性问题
 
-说实话，事件冒泡我没想到什么兼容性问题。倒是事件有兼容性问题。事件的兼容性
+说实话，事件冒泡我没想到什么兼容性问题。倒是事件有兼容性问题。事件的兼容性问题主要源自于 IE 与 Webkit 内核实现 Event Handler 的方式不同。红宝书的第 13 章提到了大量关于 IE 事件特殊性的地方。
+首先，我们习惯使用的 `addEventListener` 和 `removeEventListener` 在 IE 中被实现为 `attachEvent` 和 `detachEvent` 。IE9 开始支持标准的 `addEventListener` 和 `removeEventListener` ，IE11 开始正式废弃了 `attachEvent` 和 `detachEvent` 。
 
 ###### Ajax 的兼容性问题
 
