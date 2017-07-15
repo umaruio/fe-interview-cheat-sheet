@@ -42,7 +42,7 @@
 * [x] parseInt 的第二个参数代表什么
 * [x] 完整的 map, reduce, filter 都包含哪些参数？
 * [x] 简述一下 prototype
-* [ ] 事件冒泡与 Ajax 的兼容性问题
+* [x] 事件冒泡与 Ajax 的兼容性问题x
 * [ ] 给定一个DOM元素，获取它相对于视图窗口的坐标
 * [ ] offsetHeight， scrollHeight, clientHeight 分别代表什么
 * [ ] JavaScript 严格模式

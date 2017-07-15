@@ -327,3 +327,10 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 在老版本的 IE 中，可以使用 `req = new ActiveXObject('Microsoft.XMLHTTP')` 生成 Ajax 对象代替 `XHR` 。  
 当然，我们还需要一种 polyfill 彻底解决这个问题，欢迎扩充。
 
+##### 给定一个DOM元素，获取它相对于视图窗口的坐标
+
+没什么说的，直接上代码：
+
+```js
+
+```
