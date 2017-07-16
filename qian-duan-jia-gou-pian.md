@@ -34,3 +34,9 @@ Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对
 
 ![](/assets/mvp.png)
 
+###### MVVM
+
+![](/assets/mvvm.png)
+
+
+
