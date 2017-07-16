@@ -56,7 +56,7 @@
 * [ ] ~~Vue 的优点和缺点~~
 * [x] 前后端分离的优点和缺点
 * [ ] 前端工程化的意义
-* [ ] 什么是 MVC，什么是 MVP，什么是 MVVM
+* [x] 什么是 MVC，什么是 MVP，什么是 MVVM
 * [ ] Vuex 的工作原理
 * [ ] 项目如何实现模块化
 * [ ] AMD CMD UMD CommonJS ES6 对比

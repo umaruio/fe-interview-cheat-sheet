@@ -29,14 +29,24 @@ Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对
 ###### MVC
 
 ![](/assets/mvc.png)
+View：用户界面
+Controller：业务逻辑
+模型：数据存储
+在这种模式中，通信关系一般是这样的：
+1. 用户通过 View 将指令传送到 Controller，或直接通知 Controller（比如直接改变URL）。
+2. Controller 完成业务逻辑后，通知 Model 改变状态。
+3. Model 层将新的状态反馈到 View 上，用户得到反馈。
 
 ###### MVP
 
 ![](/assets/mvp.png)
+MVP 将 Controller 替换成了 Presenter 。
+View 和 Model 全部通过 Presenter 相互联系，也就是说，Presenter 是整个模式的核心。
+View 不部署任何业务逻辑，称为“被动视图（Passive View）”，而 Presenter 非常厚，包含所有业务逻辑。
 
 ###### MVVM
 
 ![](/assets/mvvm.png)
-
+MVVM 将 Presenter 替换成了 ViewModel 。它与 MVP 的区别在于，View 与 ViewModel 是双向绑定的，View 的变动会自动反映在 ViewModel 上，反之亦然。
 
 
