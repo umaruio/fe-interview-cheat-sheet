@@ -2,11 +2,11 @@
 
 ##### Vue 1 和 Vue 2 的区别
 
-**如果你没有用过 Vue 1，不要强答！**
-Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对 DOM 操作的效率。
-同时，Vue 2 提供了更严格单向数据流形式。Vue 2 完全取消了双向绑定，子组件不能直接修改父组件传入的任何数据（这一点我觉得是参考借鉴了 React）。在 Vue 2 中，子组件只能通过触发事件的形式通知父组件修改数据，再反馈给子组件更新视图。
-事件传递部分，Vue 2 取消了 `dispatch` 和 `broadcast` 。Vue 2 的所有自定义组件默认不冒泡，只能在组件自身上使用 `emit` 触发。为了解决这个问题，Vue 2 引入了 Event Bus 的概念，通过一个额外的 Vue 实例来管理跨组件事件（JavaScript 中的观察者模式）。
-关于 Vue 1 和 Vue 2 更详细的区别，我写过一篇文章：http://www.jianshu.com/p/90b995c113fc
+**如果你没有用过 Vue 1，不要强答！**  
+Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对 DOM 操作的效率。  
+同时，Vue 2 提供了更严格单向数据流形式。Vue 2 完全取消了双向绑定，子组件不能直接修改父组件传入的任何数据（这一点我觉得是参考借鉴了 React）。在 Vue 2 中，子组件只能通过触发事件的形式通知父组件修改数据，再反馈给子组件更新视图。  
+事件传递部分，Vue 2 取消了 `dispatch` 和 `broadcast` 。Vue 2 的所有自定义组件默认不冒泡，只能在组件自身上使用 `emit` 触发。为了解决这个问题，Vue 2 引入了 Event Bus 的概念，通过一个额外的 Vue 实例来管理跨组件事件（JavaScript 中的观察者模式）。  
+关于 Vue 1 和 Vue 2 更详细的区别，我写过一篇文章：[http://www.jianshu.com/p/90b995c113fc](http://www.jianshu.com/p/90b995c113fc)
 
 ##### 前后端分离的优点和缺点
 
@@ -24,6 +24,9 @@ Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对
 
 ##### 什么是 MVC，什么是 MVP，什么是 MVVM
 
-可以参考阮一峰老师的一篇文章：http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html
+可以参考阮一峰老师的一篇文章：[http://www.ruanyifeng.com/blog/2015/02/mvcmvp\_mvvm.html](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
 
 ###### MVC
+
+![](/assets/mvc.png)
+
