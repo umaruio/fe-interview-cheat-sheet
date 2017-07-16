@@ -5,7 +5,7 @@
 * [HTML & CSS 篇](css-pian.md)
 * [JavaScript 篇](javascript-pian.md)
 * [前端架构篇](qian-duan-jia-gou-pian.md)
-* Web & Bowser 篇
+* [Web & Bowser 篇](web-and-bowser-pian.md)
 * 算法、数据结构与设计模式篇
 * Node 篇
 
