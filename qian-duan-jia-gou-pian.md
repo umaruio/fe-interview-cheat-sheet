@@ -49,4 +49,6 @@ View 不部署任何业务逻辑，称为“被动视图（Passive View）”，
 ![](/assets/mvvm.png)
 MVVM 将 Presenter 替换成了 ViewModel 。它与 MVP 的区别在于，View 与 ViewModel 是双向绑定的，View 的变动会自动反映在 ViewModel 上，反之亦然。
 
+##### Vuex 的实现原理
+https://tech.meituan.com/vuex-code-analysis.html
 
