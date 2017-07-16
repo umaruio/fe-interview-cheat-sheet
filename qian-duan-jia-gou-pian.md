@@ -25,3 +25,5 @@ Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对
 ##### 什么是 MVC，什么是 MVP，什么是 MVVM
 
 可以参考阮一峰老师的一篇文章：http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html
+
+###### MVC
