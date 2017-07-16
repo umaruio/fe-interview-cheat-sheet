@@ -59,16 +59,21 @@ https://tech.meituan.com/vuex-code-analysis.html
 2. 选用模块化的架构，比如 React 和 Vue 。
 3. 对项目目录进行模块化划分，将相似的组件或功能进行归类。举一个简单的 Vue 的例子：
 
-    ```
-    - components
-        - ComponentA.vue
-        - ComponentB
-            - Header.vue
-            - Footer.vue
-    - views
-        - index.vue
-        - list.vue
-    - utils
-        - axios.vue
-    - store
-    ```
+```
+- components
+    - ComponentA.vue
+    - ComponentB
+        - Header.vue
+        - Footer.vue
+- views
+    - index.vue
+    - list.vue
+- utils
+    - axios.vue
+- store
+    - index.js
+    - mutation-types.js
+    - actions.js
+    - modules
+        - cart.js
+```
