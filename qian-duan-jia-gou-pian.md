@@ -52,3 +52,23 @@ MVVM 将 Presenter 替换成了 ViewModel 。它与 MVP 的区别在于，View �
 ##### Vuex 的实现原理
 https://tech.meituan.com/vuex-code-analysis.html
 
+##### 项目如何模块化
+
+谈谈个人的理解：
+1. 对项目结构进行模块划分。
+2. 选用模块化的架构，比如 React 和 Vue 。
+3. 对项目目录进行模块化划分，将相似的组件或功能进行归类。举一个简单的 Vue 的例子：
+
+    ```
+    - components
+        - ComponentA.vue
+        - ComponentB
+            - Header.vue
+            - Footer.vue
+    - views
+        - index.vue
+        - list.vue
+    - utils
+        - axios.vue
+    - store
+    ```
