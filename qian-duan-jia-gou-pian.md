@@ -79,5 +79,11 @@ MVVM 将 Presenter 替换成了 ViewModel 。它与 MVP 的区别在于，View �
         - cart.js
 ```
 
+##### AMD CMD UMD CommonJS ES6 对比
 
-
+https://segmentfault.com/a/1190000004873947
+CommonJS：Node 的加载方式。因为 Node 是跑在服务器端的，都是本地文件，所以不存在异步加载的问题。
+AMD：不管当前用不用，先加载上 - Require.js
+CMD：用的时候再加载 - Sea.js
+UMD：判断如果支持 Node 的 `exports` 就使用 Node 的模块模式，否则使用 AMD 。
+ES6 的 `import` 类似于 CommonJS，但实际上它是静态加载的，所以你不能使用类似 `if (true) { import 'a'}` 这样的语法。（只想到这个。）
