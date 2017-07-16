@@ -58,7 +58,7 @@
 * [ ] 前端工程化的意义
 * [x] 什么是 MVC，什么是 MVP，什么是 MVVM
 * [x] Vuex 的工作原理
-* [ ] 项目如何实现模块化
+* [x] 项目如何实现模块化
 * [ ] AMD CMD UMD CommonJS ES6 对比
 
 ## Web & Bowser 篇
