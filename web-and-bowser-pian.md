@@ -62,17 +62,17 @@ DNS 同时占用 TCP 和 UDP 的 53 端口。几乎所有的 DNS 请求都会使
 
 物理层
 数据链路层
-网络层
-运输层
-应用层
+网络层：IP
+运输层：TCP、UDP
+应用层：HTTP、FTP
 
 ###### 七层结构（OSI：Open System Interconnect 开放系统互连参考模型）
 
 物理层
 数据链路层
-网络层
-传输层
-会话层
-表示层
-应用层
+网络层：IP
+传输层：TCP、UDP
+会话层：SQL、RPC
+表示层：GIF、JPEG、MPEG
+应用层：WWW、FTP、HTTP
 
