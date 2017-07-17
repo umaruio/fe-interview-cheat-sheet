@@ -81,7 +81,7 @@
 * [x] IP 在哪一层
 * [x] HTTP 在哪一层
 * [ ] 多线程和多进程的区别
-* [ ] HTTP 的状态与状态码有哪些
+* [x] HTTP 的状态与状态码有哪些
 * [ ] CDN 的用法
 * [ ] 浏览器缓存问题（etag, last-modified)
 * [ ] XSS 与 CSRF 的防范
