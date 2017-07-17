@@ -76,3 +76,43 @@ DNS 同时占用 TCP 和 UDP 的 53 端口。几乎所有的 DNS 请求都会使
 表示层：GIF、JPEG、MPEG
 应用层：WWW、FTP、HTTP
 
+##### 多线程和多进程的区别
+
+##### HTTP 的状态与状态码有哪些
+
+列举一些常用的：
+
+###### 1XX 消息
+
+* 
+
+###### 2XX 成功
+
+* 200 OK
+
+###### 3XX 重定向
+
+* 301 Moved Permanently
+* 302 Move temporarily
+* 304 Not Modified
+* 305 Use Proxy
+* 307 Temporary Redirect
+
+###### 4XX 请求错误
+
+* 400 Bad Request
+* 401 Unauthorized
+* 402 Payment Required
+* 403 Forbidden
+* 404 Not Found
+* 405 Method Not Allowed
+* 406 Not Acceptable - 请求的资源的内容特性无法满足请求头中的条件，因而无法生成响应实体。
+* 407 Proxy Authentication Required - 与401响应类似，只不过客户端必须在代理服务器上进行身份验证。
+* 408 Request Timeout
+
+###### 5XX/6XX 服务器错误
+
+* 500 Internal Server Error
+* 502 Bad Gateway - 作为网关或者代理工作的服务器尝试执行请求时，从上游服务器接收到无效的响应。
+* 503 Service Unavailable - 由于临时的服务器维护或者过载，服务器当前无法处理请求。
+* 600 Unparseable Response Headers - 源站没有返回响应头部，只返回实体内容。
