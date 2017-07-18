@@ -55,9 +55,12 @@ DNS 同时占用 TCP 和 UDP 的 53 端口。几乎所有的 DNS 请求都会使
 * `<script defer src="script.js"></script>`：有 `defer`，加载后续文档元素的过程将和 script.js 的加载并行进行（异步），但是 **script.js 的执行**要在所有元素解析完成之后，`DOMContentLoaded` 事件触发之前完成。
   区别显而易见：都是异步加载，但是 `defer` 的执行要等到 DOM 渲染完成之后。
 
-##### SocketIO 解决了什么问题，什么情况下用得到？
+##### Socket.io 解决了什么问题，什么情况下用得到？
 
 ##### 计算机网络的五层结构与七层结构
+
+说实话没用过 Socket.io 但是用过 WebSocket，可以强答一发：
+Socket.io 对 ws ，轮询等实时通信的方式进行了封装，提供了一套稳定可靠的前端即时通信方案。
 
 ###### 五层结构
 
