@@ -240,13 +240,17 @@ function fibonacci (n) {
 
 ##### JS 如何实现数组的浅拷贝和深拷贝？
 
-https://segmentfault.com/a/1190000008637489
+[https://segmentfault.com/a/1190000008637489](https://segmentfault.com/a/1190000008637489)
 
 先解释一下什么是深拷贝，什么是浅拷贝：
 
 浅拷贝：拷贝对象的引用。
 
 深拷贝：拷贝对象的实例。
+
+数组的浅拷贝其实蛮简单的，有很多方式。比如 `Arrary.prototype.slice`。
+
+深拷贝有黑科技：用 `JSON.parse` 和 `JSON.stringify` 超级好用！
 
 ##### 如何将数组转换为字符串？
 
