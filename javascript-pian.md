@@ -242,7 +242,9 @@ function fibonacci (n) {
 
 先解释一下什么是深拷贝，什么是浅拷贝：
 
+浅拷贝：拷贝对象的引用。
 
+深拷贝：拷贝对象的实例。
 
 ##### 如何将数组转换为字符串？
 
@@ -378,6 +380,7 @@ DOMRect：[https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference
   * 禁止使用 `arguments.callee`
 
   * 函数声明必须在顶层
+
   * 新增了 ES6 保留字（已无意义）
 
 参考文档：[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict\_mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
