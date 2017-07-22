@@ -240,6 +240,10 @@ function fibonacci (n) {
 
 ##### JS 如何实现数组的浅拷贝和深拷贝？
 
+先解释一下什么是深拷贝，什么是浅拷贝：
+
+
+
 ##### 如何将数组转换为字符串？
 
 我能想到的办法：
@@ -310,10 +314,10 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 
 ###### 事件冒泡的兼容性问题
 
-说实话，事件冒泡我没想到什么兼容性问题。倒是事件有兼容性问题。事件的兼容性问题主要源自于 IE 与 Webkit 内核实现 Event Handler 的方式不同。红宝书的第 13 章提到了大量关于 IE 事件特殊性的地方。
-首先，我们习惯使用的 `addEventListener` 和 `removeEventListener` 在 IE 中被实现为 `attachEvent` 和 `detachEvent` 。IE9 开始支持标准的 `addEventListener` 和 `removeEventListener` ，IE11 开始正式废弃了 `attachEvent` 和 `detachEvent` 。
-同时 IE 实现阻止默认事件和阻止事件冒泡的方式也不一样。IE 的 event 对象有两个属性：`cancelBubble` 和 `returnValue` ，将这两个属性设置为 `false` 可分别组织事件冒泡和默认行为。
-还有就是 IE8 之前的 `Event` 对象并没有提供 `target` 属性。
+说实话，事件冒泡我没想到什么兼容性问题。倒是事件有兼容性问题。事件的兼容性问题主要源自于 IE 与 Webkit 内核实现 Event Handler 的方式不同。红宝书的第 13 章提到了大量关于 IE 事件特殊性的地方。  
+首先，我们习惯使用的 `addEventListener` 和 `removeEventListener` 在 IE 中被实现为 `attachEvent` 和 `detachEvent` 。IE9 开始支持标准的 `addEventListener` 和 `removeEventListener` ，IE11 开始正式废弃了 `attachEvent` 和 `detachEvent` 。  
+同时 IE 实现阻止默认事件和阻止事件冒泡的方式也不一样。IE 的 event 对象有两个属性：`cancelBubble` 和 `returnValue` ，将这两个属性设置为 `false` 可分别组织事件冒泡和默认行为。  
+还有就是 IE8 之前的 `Event` 对象并没有提供 `target` 属性。  
 顺便提一下，不是所有的 DOM 事件都会冒泡，比如 `blur` 事件和 `focus` 事件就是默认不冒泡的。
 
 ###### Ajax 的兼容性问题
@@ -329,11 +333,11 @@ ES6 将 `parseInt` 移植到了 `Number` 类上，当然，你一样可以在全
 
 ##### 给定一个DOM元素，获取它相对于视图窗口的坐标
 
-IE4 最先提供了获取视口坐标的函数：`Element.getBoundingClientRect()`，随后，Webkit 也提供了支持。这个函数返回一个 `DOMRect` 对象，该对象的 `x`，`y` 即是当前元素的左上角相对于视口左上角的坐标。
-需要注意的是，IE8 及之前版本的 `DOMRect` 没有 `height` 和 `width` 属性。
-详细信息可以参考文档：
-getBoundingClientRect：https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect
-DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMClientRect
+IE4 最先提供了获取视口坐标的函数：`Element.getBoundingClientRect()`，随后，Webkit 也提供了支持。这个函数返回一个 `DOMRect` 对象，该对象的 `x`，`y` 即是当前元素的左上角相对于视口左上角的坐标。  
+需要注意的是，IE8 及之前版本的 `DOMRect` 没有 `height` 和 `width` 属性。  
+详细信息可以参考文档：  
+getBoundingClientRect：[https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)  
+DOMRect：[https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMClientRect](https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMClientRect)
 
 ##### offsetHeight， scrollHeight, clientHeight 分别代表什么？
 
@@ -343,8 +347,9 @@ DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/
 
 ##### JavaScript 严格模式
 
-阮一峰老师的博客对严格模式给出了非常好的解读：http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html
+阮一峰老师的博客对严格模式给出了非常好的解读：[http://www.ruanyifeng.com/blog/2013/01/javascript\_strict\_mode.html](http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html)  
 我总结为以下几点：
+
 * 全局变量要显式声明
 * 不允许使用 `with`
 * 为 `eval` 添加了独立的作用域
@@ -357,27 +362,29 @@ DOMRect：https://developer.mozilla.org/zh-CN/docs/Mozilla/Tech/XPCOM/Reference/
 * 函数不能出现重名参数
 * 禁止八进制表示法
 * 对 `arguments` 的限制：
-    * 不允许对 `arguments` 赋值
-    * `arguments` 不再追踪参数变化，即在函数内修改参数值不会影响到 `arguments` 。
-    
+
+  * 不允许对 `arguments` 赋值
+  * `arguments` 不再追踪参数变化，即在函数内修改参数值不会影响到 `arguments` 。
+
     ```js
     function f (a) {
-        'use strict'
-        a = 2
-        return [a, arguments[0]]
+      'use strict'
+      a = 2
+      return [a, arguments[0]]
     }
     f(1) // [2, 1]
     ```
 
-    * 禁止使用 `arguments.callee` 
-    * 函数声明必须在顶层
-    * 新增了 ES6 保留字（已无意义）
-    
-参考文档：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+  * 禁止使用 `arguments.callee`
+
+  * 函数声明必须在顶层
+  * 新增了 ES6 保留字（已无意义）
+
+参考文档：[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict\_mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 ##### 如何实现图片滚动懒加载
 
-实现滚动懒加载，要利用 `<img>` 的一个特性：如果 `<img>` 没有 `src` 属性或者 `src` 属性为空，浏览器是不会加载这个图片的。所以我们实现懒加载的方法也很简单：`<img>` 的默认 `src` 为空，将真正的 `src` 保存在图片的 `dataset` 或自定义属性上。当 `<img>` 元素进入视图之后，我们再将图片的 `src` 设置为真实的 `src` ，促使图片加载。判断图片位置的方式，可以使用上边题目提到的 `Element.getBoundingClientRect()` 。
+实现滚动懒加载，要利用 `<img>` 的一个特性：如果 `<img>` 没有 `src` 属性或者 `src` 属性为空，浏览器是不会加载这个图片的。所以我们实现懒加载的方法也很简单：`<img>` 的默认 `src` 为空，将真正的 `src` 保存在图片的 `dataset` 或自定义属性上。当 `<img>` 元素进入视图之后，我们再将图片的 `src` 设置为真实的 `src` ，促使图片加载。判断图片位置的方式，可以使用上边题目提到的 `Element.getBoundingClientRect()` 。  
 需要注意的是，出于性能考虑，当图片的加载被触发之后，应当移除图片的滚动事件监听器。
 
 ##### resize 和 scroll 的性能优化
@@ -397,3 +404,6 @@ window.addEventListener('resize', function () {
 ```
 
 ##### 闭包的继承问题
+
+
+
