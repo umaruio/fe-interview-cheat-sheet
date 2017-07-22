@@ -240,6 +240,8 @@ function fibonacci (n) {
 
 ##### JS 如何实现数组的浅拷贝和深拷贝？
 
+https://segmentfault.com/a/1190000008637489
+
 先解释一下什么是深拷贝，什么是浅拷贝：
 
 浅拷贝：拷贝对象的引用。
