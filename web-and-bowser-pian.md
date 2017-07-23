@@ -147,3 +147,22 @@ Socket.io 对 ws ，轮询等实时通信的方式进行了封装，提供了一
 
 * 使用 POST 方法发送表单，并在表单中加入 hash ，保证表单来源可靠。服务器验证 hash 是否正确。
 * 使用一次性令牌机制（One-Time Tokens）。
+
+##### 输入一个 URL 后发生了什么？
+
+##### 如何实现 Web 缓存机制？
+
+##### 服务器端更新脚本，如何保证客户端不受缓存机制影响，实时更新脚本？
+
+##### HTTP 有几种请求方法，option 请求方法的作用是什么？
+
+HTTP 总共用 16 种请求方法，常用的有以下几种：
+* GET
+* POST
+* PUT
+* DELETE
+* OPTIONS
+**GET/POST 和 PUT/DELETE 的区别**：PUT/DELETE 使用 URI 明确制定了请求资源的位置，GET/POST 只是访问特定接口，实际操作的资源是由服务器指定的。举个例子：PUT http://example.com/resources/test.txt 即是把 text.txt 放置在 example 这个网站的 resources 文件夹下。
+**OPTIONS 的作用**：OPTIONS 方法是用于请求获得由Request-URI 标识的资源在请求/响应的通信过程中可以使用的功能选项。通过这个方法，客户端可以在采取具体资源请求之前，决定对该资源采取何种必要措施，或者了解服务器的性能。对 OPTIONS 最常见的是在跨域情况下，通过 OPTIONS 提交预检请求（preflight）以确定请求的资源是否允许跨域访问。
+
+#####  
