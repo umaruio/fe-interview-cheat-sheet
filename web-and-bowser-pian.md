@@ -181,4 +181,9 @@ OPTIONS 方法是用于请求获得由Request-URI 标识的资源在请求/响�
 ##### WebSocket 的实现机制和工作原理
 
 ##### 跨域是什么？前端如何解决跨域？
-这个问题几乎是前端必考题
+
+这个问题几乎是前端必考题。跨域源于浏览器的同源策略限制：浏览器不允许在 `a.example.com` 下动态请求 `b.example.com` 或者 `a.example.com:8080` 或者 `exampleB.com` 的资源。即：一级域名、二级域名、端口有一个不同，都属于跨域行为。同时，跨域状态下，浏览器默认会限制 HTTP Request 发送 Cookie 中的凭据信息。
+
+前端解决跨域的方法很有限，早期的 Chrome 允许在启动时添加启动参数关闭浏览器的同源策略，新的 Chrome 可以借助 cORS 插件代理同域请求到跨域接口。
+除了这些开发层面上的解决方案，实际编码中，解决方案有以下两个：CORS（Cross-Origin Resource Sharin） 和 JSONP 。
+CORS 不做过多解读，JSONP 的原理是利用 `<script>` 标签允许跨域资源请求的漏洞实现的，它使用 `<script>` 发送跨域请求，并使用一个 callback 参数将请求信息传递给服务器，服务器返回一个 JS 脚本包含我们指定的 callback 函数，然后我们执行 callback 即可获得服务器返回的内容。由于局限于 `<script>` ，所以 JSONP 只能发送 GET 请求。
