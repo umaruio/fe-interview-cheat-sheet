@@ -165,4 +165,6 @@ HTTP 总共用 16 种请求方法，常用的有以下几种：
 **GET/POST 和 PUT/DELETE 的区别**：PUT/DELETE 使用 URI 明确制定了请求资源的位置，GET/POST 只是访问特定接口，实际操作的资源是由服务器指定的。举个例子：PUT http://example.com/resources/test.txt 即是把 text.txt 放置在 example 这个网站的 resources 文件夹下。
 **OPTIONS 的作用**：OPTIONS 方法是用于请求获得由Request-URI 标识的资源在请求/响应的通信过程中可以使用的功能选项。通过这个方法，客户端可以在采取具体资源请求之前，决定对该资源采取何种必要措施，或者了解服务器的性能。对 OPTIONS 最常见的是在跨域情况下，通过 OPTIONS 提交预检请求（preflight）以确定请求的资源是否允许跨域访问。
 
-#####  
+##### HTTP 有哪些与缓存有关的状态码？
+* 200(from cache) 直接从本地缓存获取资源
+* 304 Not Modified 先请求服务器，确定资源是否更新，如果没有则直接使用本地资源。
