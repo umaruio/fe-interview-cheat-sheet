@@ -199,7 +199,7 @@ alert(object.getNameFunc()()); // "My Object"
 * 如何阻止事件冒泡？
   `event.stopPropagation()`
 
-##### readyState 的值分别代表什么状态。当 readyState === 3 的时候拔掉网线会怎么样
+##### readyState 的值分别代表什么状态。~~当 readyState === 3 的时候拔掉网线会怎么样~~
 
 readyState 来源于 `XMLHttpRequest`，所以翻翻文档就好了：
 
