@@ -209,17 +209,28 @@ html, body {
 
 ##### CSS 的怪异盒模型
 
-这个话题有点大，待我慢慢扩充。
+由于某些历史遗留问题，CSS 的盒子模型有两种标准：W3C 和 IE 。怪异盒模型主要表现在 IE 上，当不对 Doctype 进行定义时，会触发怪异模式。
+标准盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` + `padding-left` + `padding-right` + `border-left` + `border-right`
+而怪异盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` ，`width` 包含了 `padding` 和 `border` ；高度也是一样的区别。
+在 CSS3 中，`box-sizing` 指定为 `border-box` 时，会采用怪异盒计算。
 
 ##### CSS 新增了哪些特性和用法，其好处是什么？
 
 这个问题太大了，简单列举几个：
 
+###### 新增的布局方式：
+
 * grid layout
 * flex layout
+
+###### 新增的动画属性
+
 * transition
+* transform
+
+###### 新增的计算属性
+
 * calc 属性
-* transform 属性
 
 好处的话，一个是布局更灵活快速了，还有就是提供了丰富的动画接口，可以更简洁高效的实现动画效果了。
 
