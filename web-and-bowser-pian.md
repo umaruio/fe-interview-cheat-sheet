@@ -46,6 +46,8 @@ DNS 同时占用 TCP 和 UDP 的 53 端口。几乎所有的 DNS 请求都会使
 
 ##### Script 脚本阻塞的解决方法
 
+使用 `defer` 和 `async` 异步加载不重要的脚本。
+
 ##### defer 和 async 的区别
 
 参考这个回答：[https://segmentfault.com/q/1010000000640869](https://segmentfault.com/q/1010000000640869)
