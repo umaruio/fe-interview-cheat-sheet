@@ -243,7 +243,7 @@ BFC 是 Block Formatting Context 的缩写，中文名叫块级格式化上下�
 ##### CSS 的盒子模型（IE 和 W3C）
 
 这是一个很老的知识点了，是 CSS 很早的一个布局概念。之所以分成 IE 和 W3C 两种，是因为某些历史原因导致了其相互的差异。主要的差异就是上边提到的怪异盒模型的问题。
-关于盒子模型的详细信息，可以阅读：https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+MDN 盒子模型文档：https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
 
 ##### CSS3 transition 属性的用法：
 
