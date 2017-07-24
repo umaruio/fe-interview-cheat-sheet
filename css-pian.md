@@ -4,7 +4,7 @@ HTML & CSS 篇
 
 * 圣杯布局 Holy Grail Layout
 
-这种布局源于一篇文章：[https://alistapart.com/article/holygrail。它利用](https://alistapart.com/article/holygrail。它利用) CSS 负边距（Negative Margin）强行将左右两边的盒子移动到中间盒子的左右两边。
+这种布局源于一篇文章：[https://alistapart.com/article/holygrail](https://alistapart.com/article/holygrail) 。它利用CSS 负边距（Negative Margin）强行将左右两边的盒子移动到中间盒子的左右两边。
 
 ```HTML
 <body>
