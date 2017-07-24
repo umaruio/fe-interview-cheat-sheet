@@ -428,6 +428,5 @@ window.addEventListener('resize', function () {
 
 ##### 闭包的继承问题
 
-我猜测这道题应该问的是如何用闭包实现继承。
-直接上代码：
+不知道在问啥，欢迎补充！
 
