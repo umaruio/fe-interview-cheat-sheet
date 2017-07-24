@@ -8,14 +8,14 @@
 * [x] CSS 的怪异盒模型
 * [x] CSS3 新增的特性与用法。其好处是什么？
 * [x] 什么是 BFC
-* [ ] CSS 的盒子模型 （W3C 和 IE）
+* [x] CSS 的盒子模型 （W3C 和 IE）
 * [x] transition 的属性值和应用
 * [x] rem 和 em 的区别
 * [x] CSS 中有哪些长度单位
 * [ ] ~~如何实现一个矩形的椭圆边角~~
 * [ ] ~~如何实现两个 div 左右各 50% 的布局~~
-* [ ] 移动端布局方案
-* [ ] canvas 切图的原理
+* [x] 移动端布局方案
+* [x] canvas 切图的原理
 * [x] 一些冷门的 CSS Selector
 
 ## JavaScript 篇

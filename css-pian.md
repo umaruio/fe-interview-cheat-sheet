@@ -291,8 +291,26 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 * 特殊的单位
   * 百分比
 
-##### 一些冷门的  CSS Selector
+##### 移动端布局方案
 
+由于移动端的屏幕比例不固定，所以布局时大多采用流式布局。当然，目前也有一些实践使用了固定布局。移动端布局要注意的几点：
+* 指定好 `viewport`
+    * `width`: 设置 `viewport` 的宽度（即之前所提及到的，浏览器的宽度详），这里可以为一个整数，又或者是字符串`"width-device"`
+    * `initial-scale`: 页面初始的缩放值，为数字，可以是小数
+    * `minimum-scale`: 允许用户的最小缩放值，为数字，可以是小数
+    * `maximum-scale`: 允许用户的最大缩放值，为数字，可以是小数
+    * `height`: 设置 `viewport` 的高度（我们一般而言并不能用到）
+    * `user-scalable`: 是否允许用户进行缩放，`'no'` 为不允许，`'yes'` 为允许
+* 善用 `rem`
+我没有经历过移动端开发，所以这方面的知识仅限于了解，欢迎扩充。
+
+##### canvas 切图的原理
+
+这个问题问的是如何使用 canvas 进行图片裁切的操作，比如对头像的裁切上传。
+思路不难，先把图片渲染到 `canvas` 画布上，在将一个 `div` 蒙版置于 `canvas` 上，然后获取 div 包裹的部分。
+实现有一些复杂，回头我会自己实现一遍，也欢迎大家贡献代码。
+
+##### 一些冷门的  CSS Selector
 [https://www.w3schools.com/cssref/css\_selectors.asp](https://www.w3schools.com/cssref/css_selectors.asp)
 
 
