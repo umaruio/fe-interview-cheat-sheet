@@ -153,7 +153,7 @@ body {
 }
 ```
 
-* 建议大家了解以下  CSS3 的 Flex Layout。如果有精力的话，可以再去看看 CSS3 的最新布局系统 Grid Layout 。
+* 建议大家了解一下  CSS3 的 Flex Layout。如果有精力的话，可以再去看看 CSS3 的最新布局系统 Grid Layout 。
 
 ##### CSS 如何实现垂直居中？
 
@@ -314,7 +314,7 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 这个问题问的是如何使用 canvas 进行图片裁切的操作，比如对头像的裁切上传。  
 思路不难，先把图片渲染到 `canvas` 画布上，在将一个 `div` 蒙版置于 `canvas` 上，然后获取 div 包裹的部分。  
-代码：https://github.com/lcx960324/easycropper
+代码：[https://github.com/lcx960324/easycropper](https://github.com/lcx960324/easycropper)
 
 ##### 一些冷门的  CSS Selector
 
