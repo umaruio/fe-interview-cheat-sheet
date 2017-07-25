@@ -209,9 +209,9 @@ html, body {
 
 ##### CSS 的怪异盒模型
 
-由于某些历史遗留问题，CSS 的盒子模型有两种标准：W3C 和 IE 。怪异盒模型主要表现在 IE 上，当不对 Doctype 进行定义时，会触发怪异模式。
-标准盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` + `padding-left` + `padding-right` + `border-left` + `border-right`
-而怪异盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` ，`width` 包含了 `padding` 和 `border` ；高度也是一样的区别。
+由于某些历史遗留问题，CSS 的盒子模型有两种标准：W3C 和 IE 。怪异盒模型主要表现在 IE 上，当不对 Doctype 进行定义时，会触发怪异模式。  
+标准盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` + `padding-left` + `padding-right` + `border-left` + `border-right`  
+而怪异盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` ，`width` 包含了 `padding` 和 `border` ；高度也是一样的区别。  
 在 CSS3 中，`box-sizing` 指定为 `border-box` 时，会采用怪异盒计算。
 
 ##### CSS 新增了哪些特性和用法，其好处是什么？
@@ -242,8 +242,8 @@ BFC 是 Block Formatting Context 的缩写，中文名叫块级格式化上下�
 
 ##### CSS 的盒子模型（IE 和 W3C）
 
-这是一个很老的知识点了，是 CSS 很早的一个布局概念。之所以分成 IE 和 W3C 两种，是因为某些历史原因导致了其相互的差异。主要的差异就是上边提到的**怪异盒模型**的问题。
-MDN 盒子模型文档：https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+这是一个很老的知识点了，是 CSS 很早的一个布局概念。之所以分成 IE 和 W3C 两种，是因为某些历史原因导致了其相互的差异。主要的差异就是上边提到的**怪异盒模型**的问题。  
+MDN 盒子模型文档：[https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS\_Box\_Model/Introduction\_to\_the\_CSS\_box\_model](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 
 ##### CSS3 transition 属性的用法：
 
@@ -293,32 +293,30 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 ##### 如何实现一个矩形的椭圆边角
 
-方法一：使用 `border-radius`（IE9+）
+方法一：使用 `border-radius`（IE9+）  
 方法二：使用贴图方式，在矩形的四个角进行贴图。
 
 ##### 移动端布局方案
 
 由于移动端的屏幕比例不固定，所以布局时大多采用流式布局。当然，目前也有一些实践使用了固定布局。移动端布局要注意的几点：
+
 * 指定好 `viewport`
-    * `width`: 设置 `viewport` 的宽度（即之前所提及到的，浏览器的宽度详），这里可以为一个整数，又或者是字符串`"width-device"`
-    * `initial-scale`: 页面初始的缩放值，为数字，可以是小数
-    * `minimum-scale`: 允许用户的最小缩放值，为数字，可以是小数
-    * `maximum-scale`: 允许用户的最大缩放值，为数字，可以是小数
-    * `height`: 设置 `viewport` 的高度（我们一般而言并不能用到）
-    * `user-scalable`: 是否允许用户进行缩放，`'no'` 为不允许，`'yes'` 为允许
+  * `width`: 设置 `viewport` 的宽度（即之前所提及到的，浏览器的宽度详），这里可以为一个整数，又或者是字符串`"width-device"`
+  * `initial-scale`: 页面初始的缩放值，为数字，可以是小数
+  * `minimum-scale`: 允许用户的最小缩放值，为数字，可以是小数
+  * `maximum-scale`: 允许用户的最大缩放值，为数字，可以是小数
+  * `height`: 设置 `viewport` 的高度（我们一般而言并不能用到）
+  * `user-scalable`: 是否允许用户进行缩放，`'no'` 为不允许，`'yes'` 为允许
 * 善用 `rem`
-我没有经历过移动端开发，所以这方面的知识仅限于了解，欢迎扩充。
+  我没有经历过移动端开发，所以这方面的知识仅限于了解，欢迎扩充。
 
 ##### canvas 切图的原理
 
-这个问题问的是如何使用 canvas 进行图片裁切的操作，比如对头像的裁切上传。
-思路不难，先把图片渲染到 `canvas` 画布上，在将一个 `div` 蒙版置于 `canvas` 上，然后获取 div 包裹的部分。
-实现有一些复杂，回头我会自己实现一遍，也欢迎大家贡献代码。
+这个问题问的是如何使用 canvas 进行图片裁切的操作，比如对头像的裁切上传。  
+思路不难，先把图片渲染到 `canvas` 画布上，在将一个 `div` 蒙版置于 `canvas` 上，然后获取 div 包裹的部分。  
+代码：https://github.com/lcx960324/easycropper
 
 ##### 一些冷门的  CSS Selector
+
 [https://www.w3schools.com/cssref/css\_selectors.asp](https://www.w3schools.com/cssref/css_selectors.asp)
-
-
-
-
 
