@@ -424,7 +424,5 @@ window.addEventListener('resize', function () {
 })
 ```
 
-##### 闭包的继承问题
 
-不知道在问啥，欢迎补充！
 
