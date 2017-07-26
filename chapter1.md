@@ -19,34 +19,34 @@
 
 ## [JavaScript 篇](/javascript-pian.md)
 
-* [x] JS 的基本类型有哪些，引用类型有哪些，二者有什么区别
-* [x] 哪些类型是存在于栈上的，哪些是存在于堆上的。
-* [x] null 和 undefined 的区别
-* [x] JS 的继承有哪几种，分别有什么特点。
-* [x] 什么是原型链？原型与原型链的区别？
-* [x] ES6 的继承和 ES5 的继承有什么区别
-* [x] 原生 Ajax 的实现步骤
-* [x] 什么是闭包？什么时候构成闭包？
-* [ ] 函数 return 形式的闭包的 Promise 写法
-* [x] 如何禁止浏览器的默认事件？什么是事件冒泡？怎样防止事件冒泡？（CSS 也有一种方法）
-* [x] readyState 的值分别代表什么状态。~~当 readyState === 3 的时候拔掉网线会怎么样？~~
-* [x] 闭包的缺陷
-* [x] 编写一个简单的递归函数
-* [x] 说出 Event 对象的 3 - 5 个属性或方法
-* [x] 如何改变函数的 this 的指向？call, apply, bind 的区别？
-* [x] JS 如何实现数组的浅拷贝和深拷贝？
-* [x] 如何将数组转换为字符串？
-* [x] 如何将字符串转换为整数？
-* [x] parseInt 的第二个参数代表什么
-* [x] 完整的 map, reduce, filter 都包含哪些参数？
-* [x] 简述一下 prototype
-* [x] 事件冒泡与 Ajax 的兼容性问题x
-* [x] 给定一个DOM元素，获取它相对于视图窗口的坐标
-* [x] offsetHeight， scrollHeight, clientHeight 分别代表什么
-* [x] JavaScript 严格模式
-* [x] 如何实现图片滚动懒加载
-* [x] resize 和 scroll 性能优化
-* [ ] ~~闭包的继承问题~~
+* JS 的基本类型有哪些，引用类型有哪些，二者有什么区别
+* 哪些类型是存在于栈上的，哪些是存在于堆上的。
+* null 和 undefined 的区别
+* JS 的继承有哪几种，分别有什么特点。
+* 什么是原型链？原型与原型链的区别？
+* ES6 的继承和 ES5 的继承有什么区别
+* 原生 Ajax 的实现步骤
+* 什么是闭包？什么时候构成闭包？
+* ~~函数 return 形式的闭包的 Promise 写法~~
+* 如何禁止浏览器的默认事件？什么是事件冒泡？怎样防止事件冒泡？（CSS 也有一种方法）
+* readyState 的值分别代表什么状态。~~当 readyState === 3 的时候拔掉网线会怎么样？~~
+* 闭包的缺陷
+* 编写一个简单的递归函数
+* 说出 Event 对象的 3 - 5 个属性或方法
+* 如何改变函数的 this 的指向？call, apply, bind 的区别？
+* JS 如何实现数组的浅拷贝和深拷贝？
+* 如何将数组转换为字符串？
+* 如何将字符串转换为整数？
+* parseInt 的第二个参数代表什么
+* 完整的 map, reduce, filter 都包含哪些参数？
+* 简述一下 prototype
+* 事件冒泡与 Ajax 的兼容性问题x
+* 给定一个DOM元素，获取它相对于视图窗口的坐标
+* offsetHeight， scrollHeight, clientHeight 分别代表什么
+* JavaScript 严格模式
+* 如何实现图片滚动懒加载
+* resize 和 scroll 性能优化
+* ~~闭包的继承问题~~
 
 ## [前端架构篇](/qian-duan-jia-gou-pian.md)
 
