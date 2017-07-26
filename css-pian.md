@@ -1,4 +1,4 @@
-# HTML & CSS 篇
+# HTML & CSS 篇 {#css-3-col-layout}
 
 ##### CSS 三列布局的实现方案（左右两列宽度固定，中间自适应）：
 
@@ -115,7 +115,7 @@ Flex Layout 是 CSS3 提供的新的布局方式。
 }
 ```
 
-##### 如何用 Flex 画出一个直径 100px 的圆，并放在屏幕中间？
+##### 如何用 Flex 画出一个直径 100px 的圆，并放在屏幕中间？ {#flex-circle-center}
 
 这个问题要分成两部分：画出一个直径 100px 的圆 & 将某个 div 置于屏幕中间。
 
@@ -155,7 +155,7 @@ body {
 
 * 建议大家了解一下  CSS3 的 Flex Layout。如果有精力的话，可以再去看看 CSS3 的最新布局系统 Grid Layout 。
 
-##### CSS 如何实现垂直居中？
+##### CSS 如何实现垂直居中？ {#css-vertical-center}
 
 在我的理解中，垂直居中有两类：文本垂直居中和标签元素的垂直居中。
 
@@ -207,14 +207,14 @@ html, body {
 }
 ```
 
-##### CSS 的怪异盒模型
+##### CSS 的怪异盒模型 {#css-weird-box}
 
 由于某些历史遗留问题，CSS 的盒子模型有两种标准：W3C 和 IE 。怪异盒模型主要表现在 IE 上，当不对 Doctype 进行定义时，会触发怪异模式。  
 标准盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` + `padding-left` + `padding-right` + `border-left` + `border-right`  
 而怪异盒模型中，一个 block 的总宽度 = `width` + `margin-left` + `margin-right` ，`width` 包含了 `padding` 和 `border` ；高度也是一样的区别。  
 在 CSS3 中，`box-sizing` 指定为 `border-box` 时，会采用怪异盒计算。
 
-##### CSS 新增了哪些特性和用法，其好处是什么？
+##### CSS3 新增了哪些特性和用法，其好处是什么？ {#css3-new-feature}
 
 这个问题太大了，简单列举几个：
 
@@ -234,18 +234,18 @@ html, body {
 
 好处的话，一个是布局更灵活快速了，还有就是提供了丰富的动画接口，可以更简洁高效的实现动画效果了。
 
-##### 什么是 BFC？
+##### 什么是 BFC？ {#bfc}
 
 BFC 是 Block Formatting Context 的缩写，中文名叫块级格式化上下文。它的 MDN 链接：[https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block\_formatting\_context](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
 
 这个概念落脚点在上下文，即一个包含环境。换言之就是我们创建了一个块级元素，而这个元素又属于 BFC 规定的那几种元素之一，那它就和它的子元素一起构成了一个块级格式化上下文。要注意的是：一个块格式化上下文包括创建它的元素内部所有内容，**除了**被包含于创建新的块级格式化上下文的后代元素内的元素。\(这个概念我也不是很清楚，需要进一步扩充。\)
 
-##### CSS 的盒子模型（IE 和 W3C）
+##### CSS 的盒子模型（IE 和 W3C） {#css-box-model}
 
 这是一个很老的知识点了，是 CSS 很早的一个布局概念。之所以分成 IE 和 W3C 两种，是因为某些历史原因导致了其相互的差异。主要的差异就是上边提到的**怪异盒模型**的问题。  
 MDN 盒子模型文档：[https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS\_Box\_Model/Introduction\_to\_the\_CSS\_box\_model](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 
-##### CSS3 transition 属性的用法：
+##### CSS3 transition 属性的用法： {#css3-transition}
 
 这是 CSS3 新提供的一个用来制作元素过度动效的属性，通常定义在 CSS 伪类中，也可以配合 `transform` 等动画属性一起使用。大致的用法如下：
 
@@ -259,7 +259,7 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 [https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition)
 
-##### rem 和 em 的区别
+##### rem 和 em 的区别 {#rem-em}
 
 在 CSS 中，em 和 rem 都属于灵活的单位，都会由浏览器根据实际情况转换成 px 值。
 
@@ -269,7 +269,7 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 * rem 是 CSS3 新增的一个相对长度单位，r 是 root 的缩写。使用 rem 为元素设定字体大小时，仍然是相对大小，**但相对的只是 HTML根元素**。
 
-##### CSS 中有哪些长度单位？
+##### CSS 中有哪些长度单位？ {#css-length-unit}
 
 * 绝对长度单位
   * px 像素
@@ -291,12 +291,12 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 * 特殊的单位
   * 百分比
 
-##### 如何实现一个矩形的椭圆边角
+##### 如何实现一个矩形的椭圆边角 {#css-border-radius}
 
 方法一：使用 `border-radius`（IE9+）  
 方法二：使用贴图方式，在矩形的四个角进行贴图。
 
-##### 移动端布局方案
+##### 移动端布局方案 {#mobile-layout}
 
 由于移动端的屏幕比例不固定，所以布局时大多采用流式布局。当然，目前也有一些实践使用了固定布局。移动端布局要注意的几点：
 
@@ -311,13 +311,13 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 我没有经历过移动端开发，所以这方面的知识仅限于了解，欢迎扩充。
 
-##### canvas 切图的原理
+##### canvas 切图的原理 {#canvas-cropper}
 
 这个问题问的是如何使用 canvas 进行图片裁切的操作，比如对头像的裁切上传。  
 思路不难，先把图片渲染到 `canvas` 画布上，在将一个 `div` 蒙版置于 `canvas` 上，然后获取 div 包裹的部分。  
 代码：[https://github.com/lcx960324/easycropper](https://github.com/lcx960324/easycropper)
 
-##### 一些冷门的  CSS Selector
+##### 一些冷门的  CSS Selector {#unpopular-css-selector}
 
 [https://www.w3schools.com/cssref/css\_selectors.asp](https://www.w3schools.com/cssref/css_selectors.asp)
 
