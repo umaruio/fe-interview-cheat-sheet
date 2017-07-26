@@ -1,6 +1,6 @@
-# HTML & CSS 篇 
+# [HTML & CSS 篇](#css-3-col-layout)
 
-##### CSS 三列布局的实现方案（左右两列宽度固定，中间自适应）：{#css-3-col-layout}
+##### CSS 三列布局的实现方案（左右两列宽度固定，中间自适应）： {#css-3-col-layout}
 
 * 圣杯布局 Holy Grail Layout
 
