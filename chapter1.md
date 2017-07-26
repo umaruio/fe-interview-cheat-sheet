@@ -50,45 +50,45 @@
 
 ## [前端架构篇](/qian-duan-jia-gou-pian.md)
 
-* [x] Vue 1 和 Vue 2 的区别
-* [x] 前后端分离的优点和缺点
-* [x] 前端工程化的意义
-* [x] 什么是 MVC，什么是 MVP，什么是 MVVM
-* [x] Vuex 的工作原理
-* [x] 项目如何实现模块化
-* [x] AMD CMD UMD CommonJS ES6 对比
+* Vue 1 和 Vue 2 的区别
+* 前后端分离的优点和缺点
+* 前端工程化的意义
+* 什么是 MVC，什么是 MVP，什么是 MVVM
+* Vuex 的工作原理
+* 项目如何实现模块化
+* AMD CMD UMD CommonJS ES6 对比
 
 ## [Web & Bowser 篇](/web-and-bowser-pian.md)
 
-* [x] https 有几次握手？
-* [x] https 的原理
-* [x] http 有几次握手？
-* [x] TLS 的中文名？它属于网络结构的哪一层？
-* [x] 负载均衡的方法。
-* [x] DNS 进行负载均衡的原理
-* [x] DNS 是基于 TCP 的还是 UDP 的。
-* [x] Nginx 负载均衡的原理
-* [x] 正向代理和反向代理的区别
-* [x] 浏览器是如何加载页面的？
-* [x] Script 脚本阻塞有什么解决方法
-* [x] defer 和 async 有什么区别
-* [x] Socket.io 解决了什么问题，什么情况下用得到。
-* [x] 计算机网络的五层结构与七层结构
-* [x] TCP 在哪一层
-* [x] IP 在哪一层
-* [x] HTTP 在哪一层
-* [x] 多线程和多进程的区别
-* [x] HTTP 的状态与状态码有哪些
-* [x] CDN 的用法
-* [x] XSS 与 CSRF 的防范
-* [x] 输入一个 URL 后发生了什么
-* [x] 如何实现 Web 缓存机制
-* [x] 服务器端更新脚本，如何保证客户端不受缓存机制影响，实时更新脚本？
-* [x] HTTP 有几种请求方法，OPTIONS 请求方法的作用是什么？
-* [x] HTTP 有哪些与缓存有关的状态码？
-* [x] GET 和 POST 的区别
-* [x] WebSocket 的实现机制和工作原理
-* [x] 跨域是什么？前端如何解决跨域？
+* https 有几次握手？
+* https 的原理
+* http 有几次握手？
+* TLS 的中文名？它属于网络结构的哪一层？
+* 负载均衡的方法。
+* DNS 进行负载均衡的原理
+* DNS 是基于 TCP 的还是 UDP 的。
+* Nginx 负载均衡的原理
+* 正向代理和反向代理的区别
+* 浏览器是如何加载页面的？
+* Script 脚本阻塞有什么解决方法
+* defer 和 async 有什么区别
+* Socket.io 解决了什么问题，什么情况下用得到。
+* 计算机网络的五层结构与七层结构
+* TCP 在哪一层
+* IP 在哪一层
+* HTTP 在哪一层
+* 多线程和多进程的区别
+* HTTP 的状态与状态码有哪些
+* CDN 的用法
+* XSS 与 CSRF 的防范
+* 输入一个 URL 后发生了什么
+* 如何实现 Web 缓存机制
+* 服务器端更新脚本，如何保证客户端不受缓存机制影响，实时更新脚本？
+* HTTP 有几种请求方法，OPTIONS 请求方法的作用是什么？
+* HTTP 有哪些与缓存有关的状态码？
+* GET 和 POST 的区别
+* WebSocket 的实现机制和工作原理
+* 跨域是什么？前端如何解决跨域？
 
 ## [算法、数据结构与设计模式篇](/suan-fa-3001-shu-ju-jie-gou-yu-she-ji-mo-shi-pian.md)
 
