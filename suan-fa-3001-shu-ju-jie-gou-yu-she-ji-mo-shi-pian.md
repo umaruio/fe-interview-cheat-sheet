@@ -6,6 +6,8 @@
 
 ![](/assets/sort.png)
 
+这是我对这些算法的 JS 实现：https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/Algorithm/Sort
+
 ##### 常见的查找算法及其时间复杂度
 
 ##### Fibonacci 数列的实现方法
