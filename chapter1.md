@@ -49,6 +49,7 @@
 * 如何实现图片滚动懒加载
 * resize 和 scroll 性能优化
 * ~~闭包的继承问题~~
+* 前端页面性能优化
 
 ## [前端架构篇](/qian-duan-jia-gou-pian.md)
 
