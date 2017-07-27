@@ -77,5 +77,7 @@ function interactor (node) {
 
 ##### JS 有哪些常用的设计模式
 
+其实传统软件开发的设计模式很多都可以直接套用到前端项目上。
 推荐一篇文章：http://www.alloyteam.com/2012/10/common-javascript-design-patterns/
 
+强烈建议大家认真学习一下前端提的最多的设计模式：**观察者模式**。
