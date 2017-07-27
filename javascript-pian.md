@@ -211,13 +211,14 @@ alert(object.getNameFunc()()); // "My Object"
 * 如何阻止事件冒泡？
   `event.stopPropagation()`
 
-##### readyState 的值分别代表什么状态。~~当 readyState === 3 的时候拔掉网线会怎么样~~
+##### readyState 的值分别代表什么状态。当 readyState === 3 的时候拔掉网线会怎么样？
 
 readyState 来源于 `XMLHttpRequest`，所以翻翻文档就好了：
 
 ![](/assets/xhr.readyState.png)
 
-至于第二个问题，有点粗暴。有时间我试一下。也欢迎补充~
+至于第二个问题，我还真试了一下：
+状态会停留在 3 一段时间，然后因为超时跳转到 4 。
 
 ##### 闭包的缺陷
 
