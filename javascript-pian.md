@@ -428,5 +428,7 @@ window.addEventListener('resize', function () {
 })
 ```
 
+##### 页面加载的性能优化问题
+
 
 
