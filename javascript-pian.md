@@ -131,7 +131,8 @@ var Sub = function()
 
 ##### 原生 Ajax 的实现步骤
 
-这道题问得很奇怪，我的理解是使用 JavaScript 封装原生 Ajax 并提供一些方便使用的接口。我们可以参考一下 jQuery 的 Ajax 实现，模仿其风格对 `XMLHttpRequest` 进行封装。
+实现 Ajax ，除了正常的生成和发送，主要是利用 `onreadystatechange` 回调函数对 Ajax 进行控制。无论是使用 `XMLHttpRequest` 还是 `ActiveXObject('microsoft.xmlhttp')` ，实现 Ajax 都要掌握它的五个关键状态，即 `readyState` 可能的五个值。
+    * 
 
 ##### 什么是闭包，什么时候（需要）构成闭包？
 
