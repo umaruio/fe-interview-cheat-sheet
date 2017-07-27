@@ -6,7 +6,7 @@
 
 ![](/assets/sort.png)
 
-这是我对这些算法的 JS 实现：https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/Algorithm/Sort
+这是我对这些算法的 JS 实现：[https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/Algorithm/Sort](https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/Algorithm/Sort)
 
 ##### 常见的查找算法及其时间复杂度
 
@@ -77,4 +77,5 @@ function interactor (node) {
 
 ##### JS 有哪些常用的设计模式
 
+推荐一篇文章：http://www.alloyteam.com/2012/10/common-javascript-design-patterns/
 
