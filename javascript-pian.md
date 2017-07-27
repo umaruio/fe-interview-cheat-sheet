@@ -135,7 +135,7 @@ var Sub = function()
 
 ![](/assets/xhr.readyState.png)
 
-这是我给出的一个 DEMO：https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/JavaScript/Ajax
+这是我给出的一个 DEMO：[https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/JavaScript/Ajax](https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/JavaScript/Ajax)
 
 * ##### 什么是闭包，什么时候（需要）构成闭包？
 
