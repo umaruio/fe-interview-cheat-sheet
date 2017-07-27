@@ -135,6 +135,8 @@ var Sub = function()
 
 ![](/assets/xhr.readyState.png)
 
+这是我给出的一个 DEMO：https://github.com/lcx960324/fe-interview-cheat-sheet-demo/tree/master/JavaScript/Ajax
+
 * ##### 什么是闭包，什么时候（需要）构成闭包？
 
 闭包几乎是面试必考题了。闭包是指那些可以访问独立数据的函数，举个 MDN 的例子：
