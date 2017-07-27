@@ -42,5 +42,39 @@ function fibonacci (n) {
 
 ##### 从 100 万个数中找出最大的 100 个数
 
+##### DOM 树的深度优先遍历与广度优先遍历
+
+###### 深度优先
+
+```js
+function interactor (node) {
+    console.log(node)
+    if (node.children.length) {
+        for (let i in node.children) {
+            interactor(node.children[i])
+        }
+    }
+}
+```
+
+###### 广度优先
+
+```js
+function interactor (node) {
+    const arr = []
+    arr.push(node)
+    while (arr.length > 0) {
+        node.arr.shift()
+        console.log(node)
+        if (node.children.length) {
+            for (let i in node.children) {
+                arr.push(node.children[i])
+            }
+        }
+    }
+}
+```
+
+##### JS 有哪些常用的设计模式
 
 
