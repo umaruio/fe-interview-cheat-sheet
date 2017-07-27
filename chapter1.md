@@ -16,6 +16,8 @@
 * 移动端布局方案
 * canvas 切图的原理
 * 一些冷门的 CSS Selector
+* display: none 和 visibility: hidden 的区别
+* 解释一下 reflow （回流）与 repaint（重绘）
 
 ## [JavaScript 篇](/javascript-pian.md)
 
