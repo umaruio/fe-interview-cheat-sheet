@@ -131,10 +131,11 @@ var Sub = function()
 
 ##### 原生 Ajax 的实现步骤
 
-实现 Ajax ，除了正常的生成和发送，主要是利用 `onreadystatechange` 回调函数对 Ajax 进行控制。无论是使用 `XMLHttpRequest` 还是 `ActiveXObject('microsoft.xmlhttp')` ，实现 Ajax 都要掌握它的五个关键状态，即 `readyState` 可能的五个值。
-    * 
+实现 Ajax ，除了正常的生成和发送，主要是利用 `onreadystatechange` 回调函数对 Ajax 进行控制。无论是使用 `XMLHttpRequest` 还是 `ActiveXObject('microsoft.xmlhttp')` ，实现 Ajax 都要掌握它的五个关键状态，即 `readyState` 可能的五个值：
 
-##### 什么是闭包，什么时候（需要）构成闭包？
+![](/assets/xhr.readyState.png)
+
+* ##### 什么是闭包，什么时候（需要）构成闭包？
 
 闭包几乎是面试必考题了。闭包是指那些可以访问独立数据的函数，举个 MDN 的例子：
 
