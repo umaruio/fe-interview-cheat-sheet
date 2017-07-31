@@ -42,15 +42,21 @@ function fibonacci (n) {
 
 ##### 从 100 万个数中找出最大的 100 个数
 
+这道题可以这么解：先找出第100大的数，然后再找出所有比这个数大的数。
+
+找出第100大的树是一个Top K问题，可以使用BFPRT求解。
+
+找出所有比这个数大的数，遍历就好啦~
+
 ##### 找出 n 个数中第 k 大的数
 
-使用 BFPRT 算法（线性查找法），时间复杂度 O(n) 。
+使用 BFPRT 算法（线性查找法），时间复杂度 O\(n\) 。  
 推荐两篇关于 BFPRT 的文章：
-* https://segmentfault.com/a/1190000008322873
-* https://github.com/lawlite19/AlgorithmExercises/blob/master/%E9%9B%B6%E3%80%81%E7%AE%97%E6%B3%95%E8%AF%B4%E6%98%8E/BFPRT.md
 
-我的 BFPRT 代码：https://github.com/lcx960324/fe-interview-cheat-sheet-demo/blob/master/Algorithm/Top%20K%20Problem.js
+* [https://segmentfault.com/a/1190000008322873](https://segmentfault.com/a/1190000008322873)
+* [https://github.com/lawlite19/AlgorithmExercises/blob/master/零、算法说明/BFPRT.md](https://github.com/lawlite19/AlgorithmExercises/blob/master/零、算法说明/BFPRT.md)
 
+我的 BFPRT 代码：[https://github.com/lcx960324/fe-interview-cheat-sheet-demo/blob/master/Algorithm/Top K Problem.js](https://github.com/lcx960324/fe-interview-cheat-sheet-demo/blob/master/Algorithm/Top K Problem.js)
 
 ##### DOM 树的深度优先遍历与广度优先遍历
 
@@ -87,7 +93,8 @@ function interactor (node) {
 
 ##### JS 有哪些常用的设计模式
 
-其实传统软件开发的设计模式很多都可以直接套用到前端项目上，比如：单例模式、工厂模式、观察者模式、适配器模式、代理模式。
-推荐一篇文章：http://www.alloyteam.com/2012/10/common-javascript-design-patterns/
+其实传统软件开发的设计模式很多都可以直接套用到前端项目上，比如：单例模式、工厂模式、观察者模式、适配器模式、代理模式。  
+推荐一篇文章：[http://www.alloyteam.com/2012/10/common-javascript-design-patterns/](http://www.alloyteam.com/2012/10/common-javascript-design-patterns/)
 
 强烈建议大家认真学习一下前端提的最多的设计模式：**观察者模式**。
+
