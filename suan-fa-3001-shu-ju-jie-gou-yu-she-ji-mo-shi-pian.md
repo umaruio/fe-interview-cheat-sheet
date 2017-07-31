@@ -40,14 +40,6 @@ function fibonacci (n) {
 }
 ```
 
-##### 从 100 万个数中找出最大的 100 个数
-
-这道题可以这么解：先找出第100大的数，然后再找出所有比这个数大的数。
-
-找出第100大的树是一个Top K问题，可以使用BFPRT求解。
-
-找出所有比这个数大的数，遍历就好啦~
-
 ##### 找出 n 个数中第 k 大的数
 
 使用 BFPRT 算法（线性查找法），时间复杂度 O\(n\) 。  
@@ -57,6 +49,12 @@ function fibonacci (n) {
 * [https://github.com/lawlite19/AlgorithmExercises/blob/master/零、算法说明/BFPRT.md](https://github.com/lawlite19/AlgorithmExercises/blob/master/零、算法说明/BFPRT.md)
 
 我的 BFPRT 代码：[https://github.com/lcx960324/fe-interview-cheat-sheet-demo/blob/master/Algorithm/Top K Problem.js](https://github.com/lcx960324/fe-interview-cheat-sheet-demo/blob/master/Algorithm/Top K Problem.js)
+
+##### 从 100 万个数中找出最大的 100 个数
+
+这道题可以这么解：先找出第100大的数，然后再找出所有比这个数大的数。
+找出第100大的树是一个Top K问题，可以使用BFPRT求解。
+找出所有比这个数大的数，遍历就好啦~
 
 ##### DOM 树的深度优先遍历与广度优先遍历
 
