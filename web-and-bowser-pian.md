@@ -168,7 +168,7 @@ Socket.io 对 ws ，轮询等实时通信的方式进行了封装，提供了一
 
 * Cache-Control：通过向 `Cache-Control` 指定一个生命周期（`max-age`），可以通知浏览器在有效生命周期内不重复请求该资源。\(例如：`Cache-Control: max-age=604800`\) 还可以通过 `private` 和 `public` 控制是否允许代理服务器缓存资源。
 * Expires：使用 `Expires` 指定缓存具体的过期日期。如果它与 `Cache-Control` 冲突，`Cache-Control` 会覆盖 `Expires` 。
-* Last-Modified 和 ETag：`Last-Modified` 表示被请求资源在服务器端的上次修改时间；`ETag` 是一个唯一的文件标识符，每次文件修改都会生成新的 `ETag` ，服务器通过这两个字段通知浏览器其获取的资源版本。不过这种缓存更新机制通常要等用户主动执行刷新时，客户端请求 `If-Modified-Since` 或 `If-None-Match` 字段才有效。当客户端发送的字段内容与服务器相符时，会返回 `304 Not Modified` 。
+* Last-Modified 和 ETag（Entity Tag）：`Last-Modified` 表示被请求资源在服务器端的上次修改时间；`ETag` 是一个唯一的文件标识符，每次文件修改都会生成新的 `ETag` ，服务器通过这两个字段通知浏览器其获取的资源版本。不过这种缓存更新机制通常要等用户主动执行刷新时，客户端请求 `If-Modified-Since` 或 `If-None-Match` 字段才有效。当客户端发送的字段内容与服务器相符时，会返回 `304 Not Modified` 。
   配置好这些信息，就能实现有效的缓存管理了。
 
 ##### 服务器端更新脚本，如何保证客户端不受缓存机制影响，实时更新脚本？
