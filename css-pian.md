@@ -332,5 +332,10 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 元素的外观被改变，但是布局未改变时，会触发 repaint。它不会影响到 DOM 结构的渲染。
 元素布局发生改变的时候会触发 reflow ，它会影响到 DOM 结构。
 
+##### 移动端适配方案
+
+https://github.com/riskers/blog/issues/17
+https://github.com/riskers/blog/issues/18
+
 
 
