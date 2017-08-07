@@ -378,5 +378,31 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 ###### 使用 Flex 布局
 
+```HTML
+<body>
+    <div class="container">
+        <div class="left">
+            <input type="text" class="input">
+        </div>
+        <div class="right">
+            <input type="button" value="a button!">
+        </div>
+    </div>
+</body>
+```
+
+```css
+.container {
+    display: flex;
+}
+.left {
+    margin-right: 10px;
+    width: 100%;
+}
+.input {
+    width: 100%;
+}
+```
+
 
 
