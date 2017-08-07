@@ -319,23 +319,64 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 ##### 一些冷门的  CSS Selector {#unpopular-css-selector}
 
-[https://www.w3schools.com/cssref/css\_selectors.asp](https://www.w3schools.com/cssref/css_selectors.asp)
+[https://www.w3schools.com/cssref/css\_selectors.asp](https://www.w3schools.com/cssref/css_selectors.asp)  
 [http://www.runoob.com/cssref/css-selectors.html](http://www.runoob.com/cssref/css-selectors.html)
 
 ##### display: none 和 visibility: hidden 的区别
 
-`display: none` 不会保留元素空间，会触发 reflow。
+`display: none` 不会保留元素空间，会触发 reflow。  
 `visibility: hidden` 会保留元素空间，只是视觉效果上不显示而已，不会触发 reflow，但是会触发 repaint。
 
 ##### 解释一下 reflow （回流）与 repaint（重绘）
 
-元素的外观被改变，但是布局未改变时，会触发 repaint。它不会影响到 DOM 结构的渲染。
+元素的外观被改变，但是布局未改变时，会触发 repaint。它不会影响到 DOM 结构的渲染。  
 元素布局发生改变的时候会触发 reflow ，它会影响到 DOM 结构。
 
 ##### 移动端适配方案
 
-https://github.com/riskers/blog/issues/17
-https://github.com/riskers/blog/issues/18
+[https://github.com/riskers/blog/issues/17](https://github.com/riskers/blog/issues/17)  
+[https://github.com/riskers/blog/issues/18](https://github.com/riskers/blog/issues/18)
+
+##### 一个 Input 一个 Button，Button 里的文字长度不确定，怎么在一行内实现两个元素的自适应？
+
+###### 使用 Table 布局
+
+```HTML
+<body>
+    <div class="container">
+        <div class="left">
+            <input type="text" class="input">
+        </div>
+        <div class="right">
+            <input type="button" value="this is a aaaaa button" class="button">
+        </div>
+    </div>
+</body>
+```
+
+```css
+.contaienr {
+    display: table;
+    overflow: hidden; /* Activate BFC */
+}
+.left {
+    display: table-cell;
+    width: 100%;
+}
+.input {
+    width: 100%;
+    display: block;
+}
+.right {
+    width: 100%;
+    display: table-cell;
+}
+.button {
+    margin-left: 10px; /* 避免重叠 */
+}
+```
+
+###### 使用 Flex 布局
 
 
 
