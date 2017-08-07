@@ -404,5 +404,34 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 }
 ```
 
+###### 使用 Float & BFC
+
+```HTML
+<body>
+    <div class="container">
+        <div class="right">
+            <input type="button" value="a button" class="button">
+        </div>
+        <div class="left">
+            <input type="text" class="input">
+        </div>
+    </div>
+</body>
+```
+
+```css
+.left {
+    overflow: hidden; /* Activate BFC */
+     padding-right: 10px; /* 避免重叠 */
+}
+.input {
+    display: block;
+    width: 100%;
+}
+.right {
+    float: right;
+}
+```
+
 
 
