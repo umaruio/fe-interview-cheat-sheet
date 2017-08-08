@@ -54,7 +54,6 @@
 * resize 和 scroll 性能优化
 * 页面加载的性能优化问题
 * 如何对页面进行埋点？ \[未解决\]
-* 不使用 XHR ，POST 如何跨域？ \[未解决\]
 
 ## [前端架构篇](/qian-duan-jia-gou-pian.md)
 
