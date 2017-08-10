@@ -339,6 +339,8 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 ##### 一个 Input 一个 Button，Button 里的文字长度不确定，怎么在一行内实现两个元素的自适应？
 
+参考一篇文章：https://segmentfault.com/a/1190000004424442
+
 ###### 使用 Table 布局
 
 ```HTML
