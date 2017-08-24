@@ -332,6 +332,12 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 元素的外观被改变，但是布局未改变时，会触发 repaint。它不会影响到 DOM 结构的渲染。  
 元素布局发生改变的时候会触发 reflow ，它会影响到 DOM 结构。
 
+##### HTML5 新增了哪些元素？
+
+HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容形式更加丰富。具体的信息可以参考我的一篇翻译：
+
+http://www.jianshu.com/p/8ca24717f09b
+
 ##### 移动端适配方案
 
 [https://github.com/riskers/blog/issues/17](https://github.com/riskers/blog/issues/17)  
@@ -339,7 +345,7 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 ##### 一个 Input 一个 Button，Button 里的文字长度不确定，怎么在一行内实现两个元素的自适应？
 
-参考一篇文章：https://segmentfault.com/a/1190000004424442
+参考一篇文章：[https://segmentfault.com/a/1190000004424442](https://segmentfault.com/a/1190000004424442)
 
 ###### 使用 Table 布局
 
