@@ -317,10 +317,33 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 思路不难，先把图片渲染到 `canvas` 画布上，在将一个 `div` 蒙版置于 `canvas` 上，然后获取 div 包裹的部分。  
 代码：[https://github.com/lcx960324/easycropper](https://github.com/lcx960324/easycropper)
 
-##### 一些冷门的  CSS Selector {#unpopular-css-selector}
+##### 常见的 CSS Selector {#unpopular-css-selector}
 
 [https://www.w3schools.com/cssref/css\_selectors.asp](https://www.w3schools.com/cssref/css_selectors.asp)  
-[http://www.runoob.com/cssref/css-selectors.html](http://www.runoob.com/cssref/css-selectors.html)
+[http://www.runoob.com/cssref/css-selectors.htm](http://www.runoob.com/cssref/css-selectors.html)
+
+| 选择器 | 例子 | 描述 |
+| :--- | :--- | :--- |
+| element+element | div+p |  |
+| \[attribute\] | \[target\] |  |
+| \[attribute=value\] | \[target=\_blank\] |  |
+| \[attribute~=value\] | \[title~=flower\] |  |
+| \[attribute\|=value\] | \[lang\|=en\] |  |
+| \[attribute^=value\] | a\[src^="https"\] |  |
+| \[attribute$=value\] | a\[src$=".pdf"\] |  |
+| \[attribute\*=value\] | a\[src\*="abc"\] |  |
+| :link | a:link |  |
+| :visited | a:visited |  |
+| :active | a:active |  |
+| :hover | a:hover |  |
+| :focus | input:focus |  |
+| :first-letter | p:first-letter |  |
+| :first-line | p:first-line |  |
+| :first-child | p:first-child |  |
+| :before | p:before |  |
+| :after | p:after |  在每个&lt;p&gt;元素之后插入内容 |
+| element1~element2 | p~ul | 选择前边带有&lt;p&gt;元素的每个&lt;ul&gt;元素 |
+| :not\(selector\) | :not\(p\) | 选择非&lt;p&gt;元素的每个元素 |
 
 ##### display: none 和 visibility: hidden 的区别
 
@@ -336,7 +359,7 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容形式更加丰富。具体的信息可以参考我的一篇翻译：
 
-http://www.jianshu.com/p/8ca24717f09b
+[http://www.jianshu.com/p/8ca24717f09b](http://www.jianshu.com/p/8ca24717f09b)
 
 ##### 移动端适配方案
 
