@@ -15,7 +15,7 @@
 * 如何实现一个矩形的椭圆边角
 * 移动端布局方案
 * canvas 切图的原理
-* 一些冷门的 CSS Selector
+* 常见的 CSS Selector
 * display: none 和 visibility: hidden 的区别
 * 解释一下 reflow （回流）与 repaint（重绘）
 * HTML5 新增了哪些元素？
