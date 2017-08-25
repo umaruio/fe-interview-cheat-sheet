@@ -50,7 +50,7 @@
 * 事件冒泡与 Ajax 的兼容性问题x
 * 给定一个DOM元素，获取它相对于视图窗口的坐标
 * offsetHeight， scrollHeight, clientHeight 分别代表什么
-* JavaScript 严格模式
+* JavaScript 严格模式
 * 如何实现图片滚动懒加载
 * resize 和 scroll 性能优化
 * 页面加载的性能优化问题
