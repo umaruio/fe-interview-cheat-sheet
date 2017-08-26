@@ -453,7 +453,7 @@ HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容�
 ```css
 .left {
     overflow: hidden; /* Activate BFC */
-     padding-right: 10px; /* 避免重叠 */
+    padding-right: 10px; /* 避免重叠 */
 }
 .input {
     display: block;
@@ -466,5 +466,5 @@ HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容�
 
 ##### 关于CSS边距折叠的问题
 
-https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS\_Box\_Model/Mastering\_margin\_collapsing
+[https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS\_Box\_Model/Mastering\_margin\_collapsing](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
 
