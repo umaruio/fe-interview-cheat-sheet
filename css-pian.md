@@ -379,7 +379,7 @@ HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容�
             <input type="text" class="input">
         </div>
         <div class="right">
-            <input type="button" value="this is a aaaaa button" class="button">
+            <input type="button" value="this is a button" class="button">
         </div>
     </div>
 </body>
