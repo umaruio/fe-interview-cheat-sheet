@@ -464,5 +464,7 @@ HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容�
 }
 ```
 
+##### 关于CSS边距折叠的问题
 
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS\_Box\_Model/Mastering\_margin\_collapsing
 
