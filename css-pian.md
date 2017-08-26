@@ -388,7 +388,7 @@ HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容�
 ```css
 .contaienr {
     display: table;
-    overflow: hidden; /* Activate BFC */
+    table-layout: fixed;
 }
 .left {
     display: table-cell;
