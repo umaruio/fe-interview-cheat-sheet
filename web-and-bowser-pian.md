@@ -25,18 +25,18 @@ SSL（Secure Sockets Layer）是 TSL 的前身，是一种安全协议，目的�
 
 ##### SSL/TLS 的原理是什么？
 
-https://segmentfault.com/a/1190000002554673
+[https://segmentfault.com/a/1190000002554673](https://segmentfault.com/a/1190000002554673)
 
 ##### SSL 3.0 和 TSL 1.0 的关系
 
-从技术上讲，TLS 1.0与SSL 3.0的差异非常微小。但TLS 还是在安全性上进行了一些改进。
+从技术上讲，TLS 1.0与SSL 3.0的差异非常微小。但TLS 还是在安全性上进行了一些改进。  
 另外，TLS 从 1.2 开始删除了对 SSL 的兼容，以避免安全问题。
 
 ##### 负载均衡的方法
 
 * 使用 DNS 进行负载均衡（将请求解析到不同的 IP 地址上）
-* 使用 代理服务器进行请求转发，分担服务器压力。（这种方案用户必须指定代理服务器）
-* 使用ATG \(Address Translation Gateway\)，将一个公网 IP 映射到多个内网 IP 。
+* 使用代理服务器进行请求转发，分担服务器压力。（这种方案用户必须指定代理服务器）
+* 使用 ATG \(Address Translation Gateway\)，将一个公网 IP 映射到多个内网 IP 。
 * 使用 HTTP 的重定向进行负载均衡。
 * 使用 NAT（Network Address Translation）进行地址转换。
 * 使用反向代理（比如 Nginx）。
@@ -230,7 +230,7 @@ Websocket 基于 Socket 实现（这是废话）。WS 利用 HTTP 协议与服�
 除了这些开发层面上的解决方案，实际编码中，常用的解决方案有以下两个：CORS（Cross-Origin Resource Sharin） 和 JSONP 。  
 CORS 不做过多解读，JSONP 的原理是利用 `<script>` 标签允许跨域资源请求的漏洞实现的，它使用 `<script>` 发送跨域请求，并使用一个 callback 参数将请求信息传递给服务器，服务器返回一个 JS 脚本包含我们指定的 callback 函数，然后我们执行 callback 即可获得服务器返回的内容。由于局限于 `<script>` ，所以 JSONP 只能发送 GET 请求。
 
-除了这些，还有一些曾经常见的解决方案：利用` document.domain` 或 `window.name` 实现跨域。
+除了这些，还有一些曾经常见的解决方案：利用`document.domain` 或 `window.name` 实现跨域。
 
-关于跨域的详细内容，可以参阅这篇文章：https://github.com/wengjq/Blog/issues/2
+关于跨域的详细内容，可以参阅这篇文章：[https://github.com/wengjq/Blog/issues/2](https://github.com/wengjq/Blog/issues/2)
 
