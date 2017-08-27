@@ -151,7 +151,9 @@ Socket.io 对 ws ，轮询等实时通信的方式进行了封装，提供了一
 
 ##### 常见的 HTTP Header
 
+###### 通用 Header
 
+###### Cache Control
 
 ##### CDN 的用法
 
