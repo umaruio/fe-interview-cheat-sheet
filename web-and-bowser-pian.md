@@ -151,9 +151,47 @@ Socket.io 对 ws ，轮询等实时通信的方式进行了封装，提供了一
 
 ##### 常见的 HTTP Header
 
-###### 通用 Header
-
 ###### Cache Control
+
+缓存控制
+
+###### Date
+
+表示消息发送的时间
+
+###### Connection
+
+表示连接形式：keep-alive / close
+
+###### CORS
+
+表示对跨域请求的限制
+
+###### Request Header
+
+```
+GET http://download.microtool.de:80/somedata.exe
+Host: download.microtool.de
+Accept:*/*
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://download.microtool.de/
+User-Agent:Mozilla/4.04[en](Win95;I;Nav)
+Range:bytes=554554-
+```
+
+###### Response Header
+
+```
+HTTP/1.0 200 OK 
+Date:Mon,31Dec200104:25:57GMT 
+Server:Apache/1.3.14(Unix) 
+Content-type:text/html 
+Last-modified:Tue,17Apr200106:46:28GMT 
+Etag:"a030f020ac7c01:1e9f" 
+Content-length:39725426 
+Content-range:bytes554554-40279979/40279980
+```
 
 ##### CDN 的用法
 
