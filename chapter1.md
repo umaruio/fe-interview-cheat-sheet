@@ -92,6 +92,7 @@
 * HTTP 在哪一层
 * 多线程和多进程的区别
 * HTTP 的状态与状态码有哪些
+* 常见的 HTTP Header
 * CDN 的用法
 * XSS 与 CSRF 的防范
 * 输入一个 URL 后发生了什么

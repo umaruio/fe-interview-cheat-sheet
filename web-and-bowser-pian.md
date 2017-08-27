@@ -149,6 +149,8 @@ Socket.io 对 ws ，轮询等实时通信的方式进行了封装，提供了一
 * 503 Service Unavailable - 由于临时的服务器维护或者过载，服务器当前无法处理请求。
 * 600 Unparseable Response Headers - 源站没有返回响应头部，只返回实体内容。
 
+##### 常见的 HTTP Header
+
 ##### CDN 的用法
 
 这个题，没办法回答。自己配置 CDN 服务器的话，不太现实，最好的办法就是直接购买现成的 CDN 服务。
