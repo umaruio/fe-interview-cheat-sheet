@@ -271,6 +271,23 @@ function fibonacci (n) {
 
 以下是一个简单对象深拷贝的例子：
 
+```js
+function deepCopy (source) {
+    if (typeof source !== 'object') {
+        return source
+    }
+    const copy = {}
+    for (let key in source) {
+        if (typeof key === 'object') {
+            copy[key] = deepCopy(source[key])
+        } else {
+            copy[key] = source[key]
+        }
+    }
+    return copy
+}
+```
+
 ##### 如何将数组转换为字符串？
 
 我能想到的办法：
