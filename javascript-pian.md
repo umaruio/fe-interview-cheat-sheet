@@ -217,7 +217,7 @@ readyState 来源于 `XMLHttpRequest`，所以翻翻文档就好了：
 
 ![](/assets/xhr.readyState.png)
 
-至于第二个问题，我还真试了一下：
+至于第二个问题，我还真试了一下：  
 状态会停留在 3 一段时间，然后因为超时跳转到 4 。
 
 ##### 闭包的缺陷
@@ -268,6 +268,8 @@ function fibonacci (n) {
 数组的浅拷贝其实蛮简单的，有很多方式。比如 `Arrary.prototype.slice`。
 
 深拷贝有黑科技：用 `JSON.parse` 和 `JSON.stringify` 超级好用！
+
+以下是一个简单对象深拷贝的例子：
 
 ##### 如何将数组转换为字符串？
 
