@@ -53,7 +53,7 @@
 * 如何实现图片滚动懒加载
 * resize 和 scroll 性能优化
 * 页面加载的性能优化问题
-* throttle 和 debounce 的关系和区别
+* throttle 和 debounce 的关系和区别 \[未解决\]
 * 如何对页面进行埋点？ \[未解决\]
 * 如何检测 DOM 元素尺寸变化？\[未解决\]
 * JavaScript 如何继承实现 Array 的子类？\[未解决\]
