@@ -457,3 +457,8 @@ window.addEventListener('resize', function () {
 
 ##### throttle 和 debounce 的关系与区别
 
+###### debounce 防抖动
+
+###### throttle 节流阀
+
+
