@@ -457,6 +457,8 @@ window.addEventListener('resize', function () {
 
 ##### throttle 和 debounce 的关系与区别
 
+参考文章：https://jinlong.github.io/2016/04/24/Debouncing-and-Throttling-Explained-Through-Examples/
+
 ###### debounce 防抖动
 
 ###### throttle 节流阀
