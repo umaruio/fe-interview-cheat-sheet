@@ -455,5 +455,5 @@ window.addEventListener('resize', function () {
    ![](/assets/concurrence-limit.png)
 3. \[待扩充\]
 
-
+##### throttle 和 debounce 的关系与区别
 
