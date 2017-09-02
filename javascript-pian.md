@@ -461,6 +461,9 @@ window.addEventListener('resize', function () {
 
 ###### debounce 防抖动
 
+debounce 用于解决某一个事件函数被频繁触发造成的性能问题（比如 scroll 事件函数会在 scroll 操作上不停触发），debounce 限制在某一个动作周期中该时间函数只在动作发生的开始 / 结尾执行一次。
+
 ###### throttle 节流阀
 
+throttle 同样用于解决类似问题。它限制时间函数在特定时间周期内只执行一次，且一定会执行一次。
 
