@@ -19,7 +19,7 @@ https，顾名思义，是使用了 SSL 的 HTTP 连接，它的目的是为了�
 TSL - Transport Layer Security - 传输层安全协议。  
 显而易见，属于传输层。
 
-##### SSL 与 TSL 的关系是什么？
+##### SSL 与 TLS 的关系是什么？
 
 SSL（Secure Sockets Layer）是 TSL 的前身，是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。
 
