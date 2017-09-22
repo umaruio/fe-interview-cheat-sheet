@@ -59,6 +59,7 @@
 * 如何检测 DOM 元素尺寸变化？\[未解决\]
 * JavaScript 如何继承实现 Array 的子类？\[未解决\]
 * 两个冷门的 JavaScript 问题
+* Array 能被直接继承吗？如果不能，为什么？该怎么实现继承？
 
 ## [前端架构篇](/qian-duan-jia-gou-pian.md)
 
