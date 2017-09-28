@@ -488,9 +488,7 @@ throttle 同样用于解决类似问题。它限制时间函数在特定时间�
 
 ##### Array 的 Splice 可不可以添加元素？
 
-可以，看文档！
-
-![](/assets/array-splice.png)
+可以，看文档！![](/assets/splice.png)
 
 ##### 在一个 `<a>` 标签中有一个 `<span>` 标签，点击 `<span>` 触发了点击事件，`target` 是谁？
 
