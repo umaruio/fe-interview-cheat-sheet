@@ -492,6 +492,8 @@ throttle 同样用于解决类似问题。它限制时间函数在特定时间�
 
 ![](/assets/splice.png)
 
+`Array.prototype.splice` 从第三个参数往后接收的所有参数都是要添加进当前数组的元素。
+
 ##### 在一个 `<a>` 标签中有一个 `<span>` 标签，点击 `<span>` 触发了点击事件，`target` 是谁？
 
 
