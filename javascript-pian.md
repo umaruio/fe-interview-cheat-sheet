@@ -472,7 +472,10 @@ throttle 同样用于解决类似问题。它限制时间函数在特定时间�
 
 ##### 如何监测 DOM 元素的尺寸变化？
 
-DOM 元素尺寸变化本身不会触发事件。只有 `window`才有`onscroll`
+DOM 元素尺寸变化本身不会触发事件。只有 `window`才有`onresize`回调。不过，有两种方案可以解决这个问题:
+
+1. MutationObserver
+2. 一个监测 DOM 尺寸变化的第三方库：https://github.com/wnr/element-resize-detector
 
 ##### 两个冷门的 CSS 问题
 
