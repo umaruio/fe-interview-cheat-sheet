@@ -6,6 +6,8 @@
 
 引用类型：Object，Array，Date，RegExp，Function，基本包装类型（Boolean，Number，String 这是三种特殊的引用类型，也可以算作基本类型）
 
+需要注意的是，`typeof` 的返回值（number, boolean, string, object, function, undefined, symbol）和 JS 的基本类型不一样。
+
 ##### 哪些类型是存在于栈上的，哪些是存在于堆上的？
 
 基本类型保存在栈上。
@@ -475,7 +477,7 @@ throttle 同样用于解决类似问题。它限制时间函数在特定时间�
 DOM 元素尺寸变化本身不会触发事件。只有 `window`才有`onresize`回调。不过，有两种方案可以解决这个问题:
 
 1. MutationObserver
-2. 一个监测 DOM 尺寸变化的第三方库：https://github.com/wnr/element-resize-detector
+2. 一个监测 DOM 尺寸变化的第三方库：[https://github.com/wnr/element-resize-detector](https://github.com/wnr/element-resize-detector)
 
 ##### 两个冷门的 CSS 问题
 
