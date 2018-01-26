@@ -1,6 +1,6 @@
 # 目录
 
-## [HTML & CSS 篇](/css-pian.md)
+## HTML & CSS 篇
 
 * CSS 三列布局的实现方案
 * 如何用 Flex 画出一个直径 100px 的圆，并放在屏幕中间
@@ -27,7 +27,7 @@
 * 浮动元素会产生哪些影响？如何清除浮动？\[未解决\]
 * 如何在多行文字的末尾添加省略号？\[未解决\]
 
-## [JavaScript 篇](/javascript-pian.md)
+## JavaScript 篇
 
 * JS 的基本类型有哪些，引用类型有哪些，二者有什么区别
 * 哪些类型是存在于栈上的，哪些是存在于堆上的。
@@ -68,7 +68,7 @@
 * 怎么给 1000 个 <li> 分别添加点击事件？（考虑性能）\[未解决\]
 * 怎么实现一个异步获取搜索结果的搜索框？如果用户频繁修改关键词，如何只让最后一次输入的结果生效？\[未解决\]
 
-## [前端架构篇](/qian-duan-jia-gou-pian.md)
+## 前端架构篇
 
 * Vue 1 和 Vue 2 的区别
 * 前后端分离的优点和缺点
@@ -78,7 +78,7 @@
 * 项目如何实现模块化
 * AMD CMD UMD CommonJS ES6 对比
 
-## [Web & Bowser 篇](/web-and-bowser-pian.md)
+## Web & Bowser 篇
 
 * https 有几次握手？
 * https 的原理
@@ -115,7 +115,7 @@
 * 跨域是什么？前端如何解决跨域？
 * Cookie，Local Storage，Session Storage 的区别是什么？\[未解决\]
 
-## [算法、数据结构与设计模式篇](/suan-fa-3001-shu-ju-jie-gou-yu-she-ji-mo-shi-pian.md)
+## 算法、数据结构与设计模式篇
 
 * [x] 常见的排序算法与其时间复杂度
 * [ ] 常见的查找算法与其时间复杂度
@@ -135,6 +135,3 @@
 ## Node 篇
 
 * [ ] Node.js 的 Buffer 和 Stream 有什么区别
-
-
-
