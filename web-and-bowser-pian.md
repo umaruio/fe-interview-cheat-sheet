@@ -14,20 +14,20 @@ https，顾名思义，是使用了 SSL 的 HTTP 连接，它的目的是为了�
 
 基于 TCP ，都是三次握手。
 
-##### TSL 的中文名是什么？它处在网络结构的哪一层？
+##### TLS 的中文名是什么？它处在网络结构的哪一层？
 
-TSL - Transport Layer Security - 传输层安全协议。  
+TLS - Transport Layer Security - 传输层安全协议。  
 显而易见，属于传输层。
 
 ##### SSL 与 TLS 的关系是什么？
 
-SSL（Secure Sockets Layer）是 TSL 的前身，是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。
+SSL（Secure Sockets Layer）是 TLS 的前身，是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。
 
 ##### SSL/TLS 的原理是什么？
 
 [https://segmentfault.com/a/1190000002554673](https://segmentfault.com/a/1190000002554673)
 
-##### SSL 3.0 和 TSL 1.0 的关系
+##### SSL 3.0 和 TLS 1.0 的关系
 
 从技术上讲，TLS 1.0与SSL 3.0的差异非常微小。但TLS 还是在安全性上进行了一些改进。  
 另外，TLS 从 1.2 开始删除了对 SSL 的兼容，以避免安全问题。
