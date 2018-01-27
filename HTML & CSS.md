@@ -328,7 +328,7 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 | \[attribute\] | \[target\] | 选择有target属性的所有元素 |
 | \[attribute=value\] | \[target=\_blank\] | 选择target属性为"\_blank"的所有元素 |
 | \[attribute~=value\] | \[title~=flower\] | 选择title属性包含"flower"的所有元素 |
-| \[attribute\|=value\] | \[lang\|=en\] | 选择lang属性以"en"开头的元素 |
+| \[attribute&brvbar;=value\] | \[lang&brvbar;=en\] | 选择lang属性以"en"开头的元素 |
 | \[attribute^=value\] | a\[src^="https"\] | 选择src属性以"https"开头的每个&lt;a&gt;元素 |
 | \[attribute$=value\] | a\[src$=".pdf"\] | 选择src属性以".pdf"结尾的每个&lt;a&gt;元素 |
 | \[attribute\*=value\] | a\[src\*="abc"\] | 选择src属性中包含"abc"的每个&lt;a&gt;元素 |
@@ -336,13 +336,13 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 | :visited | a:visited | 选择所有已被访问的每个&lt;a&gt;元素 |
 | :active | a:active | 选择激活状态（按下）的&lt;a&gt;元素 |
 | :hover | a:hover | 选择鼠标指针位于其上的&lt;a&gt;元素 |
-| :focus | input:focus | 选择获得焦点的input元素 |
+| :focus | input:focus | 选择获得焦点的 input 元素 |
 | :first-letter | p:first-letter | 选择每个&lt;p&gt;元素的首字母 |
 | :first-line | p:first-line | 选择每个&lt;p&gt;元素的首行 |
 | :first-child | p:first-child | 选择属于父元素的第一个子元素的每个&lt;p&gt;元素 |
 | :before | p:before | 在每个&lt;p&gt;元素的内容之前插入内容 |
 | :after | p:after | 在每个&lt;p&gt;元素之后插入内容 |
-| element1~element2 | p~ul | 选择前边带有&lt;p&gt;元素的每个&lt;ul&gt;元素 |
+| element1~element2 | p~ul | 选择同级元素中&lt;p&gt;元素后的每个&lt;ul&gt;元素 |
 | :not\(selector\) | :not\(p\) | 选择非&lt;p&gt;元素的每个元素 |
 
 ##### display: none 和 visibility: hidden 的区别
