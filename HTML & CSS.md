@@ -263,7 +263,7 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 
 在 CSS 中，em 和 rem 都属于灵活的单位，都会由浏览器根据实际情况转换成 px 值。
 
-* 任何浏览器的默认字体高度都是 16px 。当然我们可以通过设置 font-size 强行改变这个高度。
+* 任何浏览器的默认字体大小（如果没有改变过浏览器设置）都是 16px 。当然我们可以通过设置 font-size 强行改变这个大小。
 
 * em 是相对长度单位。相对于当前对象内文本的字体尺寸。em 会继承父级元素的字体大小。
 
@@ -296,20 +296,26 @@ transition 本身是一个比较复杂和强大的属性，所以关于它的详
 方法一：使用 `border-radius`（IE9+）  
 方法二：使用贴图方式，在矩形的四个角进行贴图。
 
+##### 如何实现 0.5 px 边框
+
+无法正确识别 `border-width: 0.5px` 的问题在 Retina 的 Safari 下不存在（准确的说是从 iOS 8 开始修复的），在 Chrome 下会向上取整到 1 px。
+
+解决方法大概有以下几种：
+
+###### 贴图
+
 ##### 移动端布局方案 {#mobile-layout}
 
 由于移动端的屏幕比例不固定，所以布局时大多采用流式布局。当然，目前也有一些实践使用了固定布局。移动端布局要注意的几点：
 
 * 指定好 `viewport`
-  * `width`: 设置 `viewport` 的宽度（即之前所提及到的，浏览器的宽度详），这里可以为一个整数，又或者是字符串`"width-device"`
+  * `width`: 设置 `viewport` 的宽度（即之前所提及到的，浏览器的宽度），这里可以为一个整数，又或者是字符串`"device-width"`
   * `initial-scale`: 页面初始的缩放值，为数字，可以是小数
   * `minimum-scale`: 允许用户的最小缩放值，为数字，可以是小数
   * `maximum-scale`: 允许用户的最大缩放值，为数字，可以是小数
-  * `height`: 设置 `viewport` 的高度（我们一般而言并不能用到）
+  * `height`: 设置 `viewport` 的高度（一般用不到）
   * `user-scalable`: 是否允许用户进行缩放，`'no'` 为不允许，`'yes'` 为允许
-* 善用 `rem`
-
-我没有经历过移动端开发，所以这方面的知识仅限于了解，欢迎扩充。
+* 善用 `em`、`rem` 等相对大小单位
 
 ##### canvas 切图的原理 {#canvas-cropper}
 
@@ -465,6 +471,8 @@ HTML5 新增了许多元素，使得 HTML Tag 的语义更加明确化，内容�
 ```
 
 ##### 关于CSS边距折叠的问题
+
+可以直接看文档，包括解决办法都写得很清楚。
 
 [https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS\_Box\_Model/Mastering\_margin\_collapsing](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
 

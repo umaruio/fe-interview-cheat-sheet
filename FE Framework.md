@@ -10,8 +10,6 @@ Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对
 
 ##### 前后端分离的优点和缺点
 
-这道题我的思路不是很清晰。
-
 ###### 优点
 
 前后端分离后，前后端研发人员可以更专注于自己负责的部分，而不需要总是同时兼顾前端和后端。传统的后端整合前端的方式，开发调试都非常麻烦，分离之后的开发效率会更高。
@@ -27,7 +25,7 @@ Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对
 
 ##### 什么是 MVC，什么是 MVP，什么是 MVVM
 
-可以参考阮一峰老师的一篇文章：[http://www.ruanyifeng.com/blog/2015/02/mvcmvp\_mvvm.html](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
+可以参考阮一峰老师的一篇文章：[http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
 
 ###### MVC
 
