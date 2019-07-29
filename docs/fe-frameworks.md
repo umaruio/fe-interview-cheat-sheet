@@ -1,6 +1,6 @@
 # 前端架构篇
 
-##### Vue 1 和 Vue 2 的区别
+## Vue 1 和 Vue 2 的区别
 
 **如果你没有用过 Vue 1，不要强答！**  
 Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对 DOM 操作的效率。  
@@ -8,60 +8,62 @@ Vue 2 与 Vue 1 最大的区别，是 Vue 2 引入了 Virtual-DOM，提升了对
 事件传递部分，Vue 2 取消了 `dispatch` 和 `broadcast` 。Vue 2 的所有自定义组件默认不冒泡，只能在组件自身上使用 `emit` 触发。为了解决这个问题，Vue 2 引入了 Event Bus 的概念，通过一个额外的 Vue 实例来管理跨组件事件（JavaScript 中的观察者模式）。  
 关于 Vue 1 和 Vue 2 更详细的区别，我写过一篇文章：[http://www.jianshu.com/p/90b995c113fc](http://www.jianshu.com/p/90b995c113fc)
 
-##### 前后端分离的优点和缺点
+## 前后端分离的优点和缺点
 
-###### 优点
+### 优点
 
 前后端分离后，前后端研发人员可以更专注于自己负责的部分，而不需要总是同时兼顾前端和后端。传统的后端整合前端的方式，开发调试都非常麻烦，分离之后的开发效率会更高。
 
-###### 缺点
+### 缺点
 
 前后端分离后，数据过分的依赖 Ajax 和 RPC 等进行传递，性能相对低下。
 
-##### 前端工程化的意义
+## 前端工程化的意义
 
-* 提高开发效率。
-* 提升代码质量与可维护性。
+- 提高开发效率。
+- 提升代码质量与可维护性。
 
-##### 什么是 MVC，什么是 MVP，什么是 MVVM
+## 什么是 MVC，什么是 MVP，什么是 MVVM
 
 可以参考阮一峰老师的一篇文章：[http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
 
-###### MVC
+### MVC
 
-![](/assets/mvc.png)  
+![](../assets/mvc.png)  
 View：用户界面  
 Controller：业务逻辑  
 模型：数据存储  
-在这种模式中，通信关系一般是这样的：  
-1. 用户通过 View 将指令传送到 Controller，或直接通知 Controller（比如直接改变URL）。  
-2. Controller 完成业务逻辑后，通知 Model 改变状态。  
+在这种模式中，通信关系一般是这样的：
+
+1. 用户通过 View 将指令传送到 Controller，或直接通知 Controller（比如直接改变 URL）。
+2. Controller 完成业务逻辑后，通知 Model 改变状态。
 3. Model 层将新的状态反馈到 View 上，用户得到反馈。
 
-###### MVP
+### MVP
 
-![](/assets/mvp.png)  
+![](../assets/mvp.png)  
 MVP 将 Controller 替换成了 Presenter 。  
 View 和 Model 全部通过 Presenter 相互联系，也就是说，Presenter 是整个模式的核心。  
 View 不部署任何业务逻辑，称为“被动视图（Passive View）”，而 Presenter 非常厚，包含所有业务逻辑。
 
-###### MVVM
+### MVVM
 
-![](/assets/mvvm.png)  
+![](../assets/mvvm.png)  
 MVVM 将 Presenter 替换成了 ViewModel 。它与 MVP 的区别在于，View 与 ViewModel 是双向绑定的，View 的变动会自动反映在 ViewModel 上，反之亦然。
 
-##### Vuex 的实现原理
+## Vuex 的实现原理
 
 [https://tech.meituan.com/vuex-code-analysis.html](https://tech.meituan.com/vuex-code-analysis.html)
 
-##### 项目如何模块化
+## 项目如何模块化
 
-谈谈个人的理解：  
-1. 对项目结构进行模块划分。  
-2. 选用模块化的项目架构，比如 React 和 Vue 。  
+谈谈个人的理解：
+
+1. 对项目结构进行模块划分。
+2. 选用模块化的项目架构，比如 React 和 Vue 。
 3. 对项目目录进行模块化划分，将相似的组件或功能进行归类。举一个简单的 Vue 的例子：
 
-```
+```text
 - components
     - ComponentA.vue
     - ComponentB
@@ -80,12 +82,12 @@ MVVM 将 Presenter 替换成了 ViewModel 。它与 MVP 的区别在于，View �
         - cart.js
 ```
 
-##### AMD CMD UMD CommonJS ES6 对比
+## AMD CMD UMD CommonJS ES6 对比
 
-https://segmentfault.com/a/1190000004873947
+[https://segmentfault.com/a/1190000004873947](https://segmentfault.com/a/1190000004873947)
 
-* CommonJS：Node 的加载方式。因为 Node 是跑在服务器端的，都是本地文件，所以不存在异步加载的问题。
-* AMD：不管当前用不用，先加载上 - Require.js
-* CMD：用的时候再加载 - Sea.js
-* UMD：判断如果支持 Node 的 `exports` 就使用 Node 的模块模式，否则使用 AMD 。
-* ES6 的 `import` 类似于 CommonJS，但实际上它是静态加载的，所以你不能使用类似 `if (true) { import 'a'}` 这样的语法。（只想到这个。）
+- CommonJS：Node 的加载方式。因为 Node 是跑在服务器端的，都是本地文件，所以不存在异步加载的问题。
+- AMD：不管当前用不用，先加载上 - Require.js
+- CMD：用的时候再加载 - Sea.js
+- UMD：判断如果支持 Node 的 `exports` 就使用 Node 的模块模式，否则使用 AMD 。
+- ES6 的 `import` 类似于 CommonJS，但实际上它是静态加载的，所以你不能使用类似 `if (true) { import 'a'}` 这样的语法。（只想到这个。）

@@ -1,0 +1,33 @@
+{
+  "name": "fe-interview-cheat-sheet",
+  "version": "1.0.0",
+  "description": "A front-end interview cheat sheet.",
+  "scripts": {
+    "lint": "prettier --check README.md docs/**/*.md",
+    "lint:fix": "prettier --write 'docs/**/*.md'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umaruio/fe-interview-cheat-sheet.git"
+  },
+  "author": "Chenxi Li",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/umaruio/fe-interview-cheat-sheet/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.md": "prettier --write"
+  },
+  "homepage": "https://github.com/umaruio/fe-interview-cheat-sheet#readme",
+  "devDependencies": {
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2"
+  }
+}
